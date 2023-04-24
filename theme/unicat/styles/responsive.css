@@ -1,0 +1,406 @@
+/******************************
+
+[Table of Contents]
+
+1. 1600px
+2. 1440px
+3. 1280px
+
+4. 1024px
+5. 768px
+6. 640px
+
+******************************/
+
+/************
+1. 1600px
+************/
+
+@media only screen and (max-width: 1600px) {
+}
+
+/************
+2. 1440px
+************/
+
+@media only screen and (max-width: 1440px) {
+}
+
+/************
+3.1280px
+************/
+
+@media only screen and (max-width: 1280px) {
+  .nav_item a {
+    padding: 0 4px;
+  }
+
+  .nav_item i {
+    padding: 0 6px;
+  }
+
+  .top_bar_contact_list li a {
+    font-size: 14px;
+  }
+
+  .nav_item {
+    padding: 0;
+  }
+
+  .filter_list,
+  .lec_list,
+  .suggest_filter_list {
+    overflow-x: scroll;
+  }
+
+  .filter_list::-webkit-scrollbar,
+  .lec_list::-webkit-scrollbar,
+  .suggest_filter_list::-webkit-scrollbar {
+    background: transparent;
+    width: 0px;
+    height: 0px;
+  }
+}
+
+/************
+4.1024px
+************/
+
+@media only screen and (max-width: 1024px) {
+  .top_bar_contact_list li a {
+    font-size: 12px;
+  }
+
+  .main-content {
+    margin-top: 70px;
+  }
+
+  .footer_col ul li {
+    font-size: 14px;
+  }
+}
+
+/************
+4.992px
+************/
+
+@media only screen and (max-width: 992px) {
+  .banner_title {
+    font-size: 32px;
+  }
+
+  .banner h3 {
+    font-size: 40px;
+
+    padding: 12px 0;
+  }
+
+  .banner p {
+    font-size: 18px;
+  }
+
+  .topics_search_container {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .nav_form_search {
+    width: 100%;
+  }
+
+  .filter_group .form-control,
+  .filter_group .input-group-append button {
+    font-size: 14px;
+  }
+}
+
+/************
+5.768px
+************/
+
+@media only screen and (max-width: 768px) {
+  .title {
+    font-size: 26px;
+    line-height: 1.8;
+  }
+
+  .filter_item a {
+    font-size: 12px;
+  }
+
+  .main_nav_item {
+    margin-right: 12px;
+  }
+
+  .main_nav_item a {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .main_nav_btn {
+    padding: 16px 8px;
+
+    font-size: 14px;
+  }
+
+  .card-wrap {
+    padding: 0 8px;
+    margin-bottom: 12px;
+  }
+
+  .notification_text,
+  .card_rating,
+  .card_quantity,
+  .card_time,
+  .card_likes,
+  .course_item .card-text,
+  .edu_item .card-text,
+  .lec_item .card-text,
+  .unit_item .card-title,
+  .feedback_text,
+  .desc_info,
+  .footer,
+  .footer_title,
+  .delete_suggest_filters,
+  .payment_body,
+  .research_text {
+    font-size: 14px;
+  }
+
+  .upgrade_btn {
+    font-size: 16px;
+    padding: 12px 0;
+  }
+
+  .suggest_filter {
+    font-size: 12px;
+
+    margin-right: 12px;
+  }
+
+  .desc {
+    padding-top: 30px;
+  }
+
+  .desc_block {
+    font-size: 14px;
+    margin-bottom: 22px;
+  }
+
+  .edu_item {
+    padding: 12px 12px 12px 24px;
+  }
+
+  .lecturers_desc_text {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .lec_item .card-title,
+  .username_info {
+    font-size: 18px;
+  }
+
+  .payment_header h5 {
+    font-size: 18px;
+  }
+
+  .payment_header h2 {
+    font-size: 26px;
+  }
+}
+
+/************
+6.640px
+************/
+
+@media only screen and (max-width: 640px) {
+  .title {
+    font-size: 24px;
+    line-height: 1.6;
+  }
+
+  .banner_title,
+  .banner_text {
+    font-size: 28px;
+  }
+
+  .banner_search_input::placeholder {
+    font-size: 12px;
+  }
+
+  .banner_search_btn {
+    font-size: 18px;
+  }
+
+  .main_nav_item {
+    margin-right: 8px;
+  }
+
+  .main_nav_item a {
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .main_nav_btn {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .course_item .card_price h4,
+  .edu_item .card_price h4,
+  .lec_item .card-title,
+  .username_info {
+    font-size: 16px;
+  }
+
+  .course_item .card_logo img,
+  .edu_item .card_logo img,
+  .unit_item .card_logo img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .notification_text,
+  .card_rating,
+  .card_quantity,
+  .card_time,
+  .card_likes,
+  .course_item .card-text,
+  .edu_item .card-text,
+  .lec_item .card-text,
+  .feedback_text,
+  .desc_info,
+  .footer,
+  .footer_title,
+  .payment_body,
+  .research_text {
+    font-size: 12px;
+  }
+
+  .filter_group .form-control,
+  .filter_group .input-group-append button,
+  .col_filter_select .form-control,
+  .delete_suggest_filters {
+    font-size: 12px;
+  }
+
+  .suggest_filter {
+    font-size: 10px;
+
+    margin-right: 8px;
+  }
+
+  .desc_block {
+    font-size: 12px;
+  }
+
+  .course_progress {
+    min-height: 24px;
+    font-size: 12px;
+  }
+
+  .course_percent {
+    height: 6px;
+  }
+
+  .card_decorate span {
+    margin: 0 6px;
+
+    height: 26px;
+    width: 10px;
+  }
+
+  .prerogative {
+    padding-left: 10px;
+  }
+}
+
+/************
+6.460px
+************/
+
+@media only screen and (max-width: 460px) {
+  .main_nav_item {
+    margin-right: 2px;
+  }
+
+  .main_nav_item a {
+    padding: 2px 4px;
+    line-height: 2.2;
+  }
+
+  .main_nav_item a,
+  .total-pages {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .course_item .card_price h4,
+  .edu_item .card_price h4 {
+    font-size: 14px;
+  }
+
+  .course_item .card_logo img,
+  .edu_item .card_logo img,
+  .unit_item .card_logo img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .unit_item .card-title {
+    font-size: 12px;
+  }
+  .card_decorate span {
+    margin: 0 4px;
+  }
+
+  .desc_content {
+    padding: 15px 20px;
+    height: auto;
+  }
+
+  .header_menu_content {
+    width: 280px;
+  }
+
+  .header_menu_close_btn {
+    right: 4px;
+  }
+
+  /* Pagination */
+
+  .page-item {
+    width: 24px;
+    height: 24px;
+    margin-right: 6px;
+  }
+
+  .total-pages,
+  .page-item .page-link {
+    font-size: 12px;
+  }
+}
+
+/************
+8.320px
+************/
+
+@media only screen and (max-width: 320px) {
+  .banner_title,
+  .banner_text {
+    font-size: 24px;
+  }
+
+  .banner_search_btn {
+    font-size: 16px;
+    padding: 3px 6px;
+  }
+
+  .header_menu_content {
+    width: 260px;
+  }
+}

@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vnmooc</title>
+    <link rel="stylesheet" type="text/css" href="./assets/lib/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="./theme/unicat/plugins/bootstrap-icons-1.10.3/bootstrap-icons.css" />
+    <link rel="stylesheet" type="text/css" href="./theme/unicat/plugins/slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./theme/unicat/styles/main_styles.css" />
+    <link rel="stylesheet" type="text/css" href="./theme/unicat/styles/custom.css" />
+    <link rel="stylesheet" type="text/css" href="./theme/unicat/styles/responsive.css" />
+  </head>
+  <body>
+    <div class="super-container" id="trainingProgramDetailsPage">
+      <!-- Header -->
+      <div class="header">
+        <!-- Top Bar -->
+        <div class="top_bar d-none d-lg-block">
+          <div class="top_bar_container">
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <div class="top_bar_content d-flex flex-row align-items-center justify-content-start">
+                    <ul class="top_bar_contact_list d-flex align-items-center">
+                      <li class="py-1 pr-2 mr-2">
+                        <i class="bi bi-telephone" aria-hidden="true"></i>
+                        <a href="tel:0123456789" class="px-1">0123456789</a>
+                      </li>
+                      <li class="py-1 pr-2 mr-3">
+                        <i class="bi bi-printer" aria-hidden="true"></i>
+                        <a href="0123456789" class="px-2">0123456789</a>
+                      </li>
+                      <li class="py-1 pr-2 mr-3">
+                        <i class="bi bi-envelope" aria-hidden="true"></i>
+                        <a href="mailto:@contact.vn" class="px-2">@contact.vn</a>
+                      </li>
+                    </ul>
+
+                    <div class="top_bar_login ml-auto d-flex flex-row align-items-center">
+                      <button type="button" class="btn top_bar_btn">ĐÀO TẠO DOANH NGHIỆP</button>
+                      <button type="button" class="btn top_bar_login_btn" data-toggle="modal" data-target="#loginModal">
+                        ĐĂNG NHẬP/ ĐĂNG KÍ
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="header_container">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <nav
+                  class="navbar navbar-expand-lg px-0 header_content d-flex flex-row align-items-center justify-content-between justify-content-lg-start"
+                >
+                  <div class="logo_container">
+                    <a href="/">
+                      <img class="logo_image" src="./assets/images/VNMOOC.VN.png" alt="Logo" />
+                    </a>
+                  </div>
+                  <button
+                    class="navbar-toggler btn header_menu_open_btn"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                  >
+                    <i class="bi bi-list" aria-hidden="true"></i>
+                  </button>
+                  <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav main_nav mx-auto">
+                      <li class="nav-item nav_item cursor-pointer">
+                        <a href="">Khóa học</a>
+                        <i class="bi bi-chevron-down"></i>
+                        <div class="menu_hover">
+                          <ul>
+                            <li>
+                              <a href="/" class="d-flex align-items-center justify-content-between">
+                                Vật lí
+                                <i class="bi bi-chevron-right"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="/" class="d-flex align-items-center justify-content-between">
+                                Công nghệ thông tin
+                                <i class="bi bi-chevron-right"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="/" class="d-flex align-items-center justify-content-between">
+                                Đào tạo Thạc sĩ
+                                <i class="bi bi-chevron-right"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="/" class="d-flex align-items-center justify-content-between">
+                                Kĩ năng sống
+                                <i class="bi bi-chevron-right"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="nav-item nav_item cursor-pointer">
+                        <a href="">Chương trình đào tạo</a>
+                        <i class="bi bi-chevron-down"></i>
+                        <div class="menu_hover">
+                          <ul>
+                            <li>
+                              <a href="/" class="d-flex align-items-center justify-content-between">
+                                Vật lí
+                                <i class="bi bi-chevron-right"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="/" class="d-flex align-items-center justify-content-between">
+                                Công nghệ thông tin
+                                <i class="bi bi-chevron-right"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="/" class="d-flex align-items-center justify-content-between">
+                                Đào tạo Thạc sĩ
+                                <i class="bi bi-chevron-right"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="/" class="d-flex align-items-center justify-content-between">
+                                Kĩ năng sống
+                                <i class="bi bi-chevron-right"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="nav-item nav_item cursor-pointer">
+                        <a href="/don_vi_dao_tao.html">Đơn vị đào tạo</a>
+                      </li>
+                    </ul>
+                    <form class="nav_form_search">
+                      <button class="btn search_btn" type="submit">
+                        <i class="bi bi-search" aria-hidden="true"></i>
+                      </button>
+                      <input class="nav_search_input" type="search" placeholder="Tìm kiếm" aria-label="Search" />
+                    </form>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Content -->
+      <div class="main-content">
+        <div class="banner_container mx-auto">
+          <div class="banner">
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <div class="banner_content">
+                    <div class="fs-14 fw-500 text-white mb-3 d-flex flex-row align-items-end justify-content-start">
+                      <img src="./assets/icons/school.svg" class="icon pr-2" alt="School" style="padding-bottom: 6px" />
+                      <span>Đại Học Bách Khoa Hà Nội</span>
+                    </div>
+                    <h3 class="fs-28 fw-700 text-white mb-3" style="line-height: 1.4">
+                      Thiết kế học phần theo tiếp cận giáo dục dựa trên chuẩn đầu ra (Outcome-Based Education)
+                    </h3>
+                    <p class="fs-14 fw-400 text-white" style="letter-spacing: 0.3px">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                      the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Training Program Details -->
+        <div class="program_details">
+          <div class="container">
+            <div class="row">
+              <div class="col pb-5">
+                <div class="overview_block">
+                  <h4 class="overview_title text-left">Chuẩn đầu ra</h4>
+                  <div class="pt-3">
+                    <ul>
+                      <li class="d-flex flex-row align-items-center justify-content-start">
+                        <img src="./assets/icons/check-circle.svg" class="icon" alt="" />
+                        <p>Angeles battles huge wildfires.</p>
+                      </li>
+                      <li class="d-flex flex-row align-items-center justify-content-start">
+                        <img src="./assets/icons/check-circle.svg" class="icon" alt="" />
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</p>
+                      </li>
+                      <li class="d-flex flex-row align-items-center justify-content-start">
+                        <img src="./assets/icons/check-circle.svg" class="icon" alt="" />
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit</p>
+                      </li>
+                      <li class="d-flex flex-row align-items-center justify-content-start">
+                        <img src="./assets/icons/check-circle.svg" class="icon" alt="" />
+                        <p>Sed ut perspiciatis unde omnis iste natus</p>
+                      </li>
+                    </ul>
+                    <ul>
+                      <li class="d-flex flex-row align-items-center justify-content-start">
+                        <img src="./assets/icons/check-circle.svg" class="icon" alt="" />
+                        <p>Los Angeles Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+                      </li>
+                      <li class="d-flex flex-row align-items-center justify-content-start">
+                        <img src="./assets/icons/check-circle.svg" class="icon" alt="" />
+                        <p>Angeles Sed ut perspiciatis unde</p>
+                      </li>
+                      <li class="d-flex flex-row align-items-center justify-content-start">
+                        <img src="./assets/icons/check-circle.svg" class="icon" alt="" />
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantiu</p>
+                      </li>
+                      <li class="d-flex flex-row align-items-center justify-content-start">
+                        <img src="./assets/icons/check-circle.svg" class="icon" alt="" />
+                        <p>Los Angele Sed ut perspiciatis unde omnis iste natus error sit</p>
+                      </li>
+                      <li class="d-flex flex-row align-items-center justify-content-start">
+                        <img src="./assets/icons/check-circle.svg" class="icon" alt="" />
+                        <p>Sed ut perspiciatis iste natus error sit voluptatem accusantium</p>
+                      </li>
+                      <li class="d-flex flex-row align-items-center justify-content-start">
+                        <img src="./assets/icons/check-circle.svg" class="icon" alt="" />
+                        <p>Los Angeles battles huge wildfires.</p>
+                      </li>
+                    </ul>
+                    <button
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#navbarToggleFilter"
+                      aria-controls="navbarToggleFilter"
+                      aria-expanded="false"
+                      aria-label="Toggle navigation"
+                      class="btn pl-0 fs-14 fw-700 text-primary d-flex flex-row align-items-center justify-content-start"
+                    >
+                      Ẩn bớt
+                      <img src="./assets/icons/chevron-up.svg" class="icon pl-2 -mt-1" alt="" />
+                    </button>
+                  </div>
+                </div>
+                <div class="overview_block">
+                  <h4 class="overview_title text-left">Mô tả</h4>
+                  <div class="pt-3">
+                    <div class="pb-3">
+                      <p>
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                        laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                        beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                        odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+                        sed quia non numquam eius modi tempora incidunt ut labore et dolore
+                      </p>
+                    </div>
+                    <button
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#navbarToggleFilter"
+                      aria-controls="navbarToggleFilter"
+                      aria-expanded="false"
+                      aria-label="Toggle navigation"
+                      class="btn pl-0 fs-14 fw-700 text-primary d-flex flex-row align-items-center justify-content-start"
+                    >
+                      Xem thêm
+                      <img src="./assets/icons/chevron-down.svg" class="icon pl-2" alt="" />
+                    </button>
+                  </div>
+                </div>
+                <div class="overview_block">
+                  <h4 class="overview_title text-left">Ai là người phù hợp với khóa học này</h4>
+                  <div class="pt-3">
+                    <div class="pb-3">
+                      <p>Ut enim ad minima veniam, quis nostrum exercitationem</p>
+                      <p>1. Lullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p>
+                      <p>2. Quis autem vel eum iure reprehenderit qui in ea voluptate</p>
+                      <p>3. Velit esse quam nihil molestiae</p>
+                      <p>4. Consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                    </div>
+                    <button
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#navbarToggleFilter"
+                      aria-controls="navbarToggleFilter"
+                      aria-expanded="false"
+                      aria-label="Toggle navigation"
+                      class="btn pl-0 fs-14 fw-700 text-primary d-flex flex-row align-items-center justify-content-start"
+                    >
+                      Xem thêm
+                      <img src="./assets/icons/chevron-down.svg" class="icon pl-2" alt="" />
+                    </button>
+                  </div>
+                </div>
+                <div class="overview_block">
+                  <h4 class="overview_title text-left">Các khóa học trong chương trình</h4>
+                  <div class="pt-3">
+                    <div class="pb-3">
+                      <div class="row mx-0 mb-4 pl-4">
+                        <div class="d-flex flex-column align-items-center justify-content-start">
+                          <span class="seq">1</span>
+                          <span class="flex-1 border-1 border-color"></span>
+                        </div>
+                        <div class="flex-1 pl-3" style="padding: 6px 0">
+                          <h5 class="fs-20 fw-700 text-color mb-3">
+                            Overview of Business Anlysis Planning and Monitoring
+                          </h5>
+                          <div class="d-flex flex-row align-items-center justify-content-start mb-3">
+                            <img src="./assets/icons/clock.svg" class="icon" alt="" />
+                            <h6 class="mb-0 fs-16 fw-700 text-color pl-2">2–4 giờ mỗi tuần, trong 6 tuần</h6>
+                          </div>
+                          <p>
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                          </p>
+                          <button class="btn fs-14 fw-700 text-white bg-primary mt-3">
+                            Xem khóa học <img src="./assets/icons/w-arrow-right.svg" class="icon pl-2" alt="" />
+                          </button>
+                        </div>
+                      </div>
+                      <div class="row mx-0 mb-4 pl-4">
+                        <div class="d-flex flex-column align-items-center justify-content-start">
+                          <span class="seq">2</span>
+                          <span class="flex-1 border-1 border-color"></span>
+                        </div>
+                        <div class="flex-1 pl-3" style="padding: 6px 0">
+                          <h5 class="fs-20 fw-700 text-color mb-3">Inputs and Elements</h5>
+                          <div class="d-flex flex-row align-items-center justify-content-start mb-3">
+                            <img src="./assets/icons/clock.svg" class="icon" alt="" />
+                            <h6 class="mb-0 fs-16 fw-700 text-color pl-2">2–4 giờ mỗi tuần, trong 6 tuần</h6>
+                          </div>
+                          <p>
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                          </p>
+                          <button class="btn fs-14 fw-700 text-white bg-primary mt-3">
+                            Xem khóa học <img src="./assets/icons/w-arrow-right.svg" class="icon pl-2" alt="" />
+                          </button>
+                        </div>
+                      </div>
+                      <div class="row mx-0 mb-4 pl-4">
+                        <div class="d-flex flex-column align-items-center justify-content-start">
+                          <span class="seq">3</span>
+                          <span class="flex-1 border-1 border-color"></span>
+                        </div>
+                        <div class="flex-1 pl-3" style="padding: 6px 0">
+                          <h5 class="fs-20 fw-700 text-color mb-3">Business Analysis Planning and Monitoring</h5>
+                          <div class="d-flex flex-row align-items-center justify-content-start mb-3">
+                            <img src="./assets/icons/clock.svg" class="icon" alt="" />
+                            <h6 class="mb-0 fs-16 fw-700 text-color pl-2">2–4 giờ mỗi tuần, trong 6 tuần</h6>
+                          </div>
+                          <p>
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                          </p>
+                          <button class="btn fs-14 fw-700 text-white bg-primary mt-3">
+                            Xem khóa học <img src="./assets/icons/w-arrow-right.svg" class="icon pl-2" alt="" />
+                          </button>
+                        </div>
+                      </div>
+                      <div class="row mx-0 mb-4 pl-4">
+                        <div class="d-flex flex-column align-items-center justify-content-start">
+                          <span class="seq">4</span>
+                          <span class="flex-1 border-1 border-color"></span>
+                        </div>
+                        <div class="flex-1 pl-3" style="padding: 6px 0">
+                          <h5 class="fs-20 fw-700 text-color mb-3">Stakeholders & Outputs</h5>
+                          <div class="d-flex flex-row align-items-center justify-content-start mb-3">
+                            <img src="./assets/icons/clock.svg" class="icon" alt="" />
+                            <h6 class="mb-0 fs-16 fw-700 text-color pl-2">2–4 giờ mỗi tuần, trong 6 tuần</h6>
+                          </div>
+                          <p>
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                          </p>
+                          <button class="btn fs-14 fw-700 text-white bg-primary mt-3">
+                            Xem khóa học <img src="./assets/icons/w-arrow-right.svg" class="icon pl-2" alt="" />
+                          </button>
+                        </div>
+                      </div>
+                      <div class="row mx-0 mb-4 pl-4">
+                        <div class="d-flex flex-column align-items-center justify-content-start">
+                          <span class="seq">5</span>
+                          <span class="flex-1 border-1 border-color"></span>
+                        </div>
+                        <div class="flex-1 pl-3" style="padding: 6px 0">
+                          <h5 class="fs-20 fw-700 text-color mb-3">Solution Evaluation</h5>
+                          <div class="d-flex flex-row align-items-center justify-content-start mb-3">
+                            <img src="./assets/icons/clock.svg" class="icon" alt="" />
+                            <h6 class="mb-0 fs-16 fw-700 text-color pl-2">2–4 giờ mỗi tuần, trong 6 tuần</h6>
+                          </div>
+                          <p>
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                          </p>
+                          <button class="btn fs-14 fw-700 text-white bg-primary mt-3">
+                            Xem khóa học <img src="./assets/icons/w-arrow-right.svg" class="icon pl-2" alt="" />
+                          </button>
+                        </div>
+                      </div>
+                      <div class="row mx-0 mb-2 pl-4">
+                        <div class="d-flex flex-column align-items-center justify-content-start">
+                          <span class="seq">6</span>
+                          <span class="flex-1 border-1 border-color"></span>
+                        </div>
+                        <div class="flex-1 pl-3" style="padding: 6px 0">
+                          <h5 class="fs-20 fw-700 text-color mb-3">Advance your career</h5>
+                          <div class="d-flex flex-row align-items-center justify-content-start mb-3">
+                            <img src="./assets/icons/clock.svg" class="icon" alt="" />
+                            <h6 class="mb-0 fs-16 fw-700 text-color pl-2">2–4 giờ mỗi tuần, trong 6 tuần</h6>
+                          </div>
+                          <p>
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                          </p>
+                          <button class="btn fs-14 fw-700 text-white bg-primary mt-3">
+                            Xem khóa học <img src="./assets/icons/w-arrow-right.svg" class="icon pl-2" alt="" />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <button
+                      type="button"
+                      class="btn w-full py-2 fs-14 fw-700 text-primary border-primary d-flex flex-row align-items-center justify-content-center"
+                    >
+                      Xem thêm
+                      <img src="./assets/icons/chevron-down.svg" class="icon pl-2" alt="" />
+                    </button>
+                  </div>
+                </div>
+                <div class="overview_block">
+                  <h4 class="overview_title text-left">Gặp gỡ các giảng viên trong quá trình học</h4>
+                  <div class="pt-3">
+                    <div class="pb-3">
+                      <div class="teaching">
+                        <div class="teaching_image">
+                          <img src="./assets/images/image 60.png" class="rounded-full" alt="Teaching Image" />
+                        </div>
+                        <div class="flex-1 pl-4">
+                          <h5 class="fs-20 fw-700 text-color">Trần Thị Lan</h5>
+                          <span
+                            class="d-flex flex-row align-items-center justify-content-start fs-14 fw-700 text-highlight"
+                          >
+                            <img src="./assets/icons/star.svg" class="icon pr-1 -mt-1" alt="" />
+                            8/10
+                          </span>
+                        </div>
+                        <div>
+                          <h6 class="fs-14 fw-700 text-color text-right">Đại học Quốc gia Hà Nội</h6>
+                          <span class="text-right">Tiến sĩ quản trị kinh doanh</span>
+                        </div>
+                      </div>
+                      <div class="teaching">
+                        <div class="teaching_image">
+                          <img src="./assets/images/image 60.png" class="rounded-full" alt="Teaching Image" />
+                        </div>
+                        <div class="flex-1 pl-4">
+                          <h5 class="fs-20 fw-700 text-color">Trần Thị Lan</h5>
+                          <span
+                            class="d-flex flex-row align-items-center justify-content-start fs-14 fw-700 text-highlight"
+                          >
+                            <img src="./assets/icons/star.svg" class="icon pr-1 -mt-1" alt="" />
+                            8/10
+                          </span>
+                        </div>
+                        <div>
+                          <h6 class="fs-14 fw-700 text-color text-right">Đại học Quốc gia Hà Nội</h6>
+                          <span class="text-right">Tiến sĩ quản trị kinh doanh</span>
+                        </div>
+                      </div>
+                      <div class="teaching">
+                        <div class="teaching_image">
+                          <img src="./assets/images/image 60.png" class="rounded-full" alt="Teaching Image" />
+                        </div>
+                        <div class="flex-1 pl-4">
+                          <h5 class="fs-20 fw-700 text-color">Trần Thị Lan</h5>
+                          <span
+                            class="d-flex flex-row align-items-center justify-content-start fs-14 fw-700 text-highlight"
+                          >
+                            <img src="./assets/icons/star.svg" class="icon pr-1 -mt-1" alt="" />
+                            8/10
+                          </span>
+                        </div>
+                        <div>
+                          <h6 class="fs-14 fw-700 text-color text-right">Đại học Quốc gia Hà Nội</h6>
+                          <span class="text-right">Tiến sĩ quản trị kinh doanh</span>
+                        </div>
+                      </div>
+                      <div class="teaching mb-0">
+                        <div class="teaching_image">
+                          <img src="./assets/images/image 60.png" class="rounded-full" alt="Teaching Image" />
+                        </div>
+                        <div class="flex-1 pl-4">
+                          <h5 class="fs-20 fw-700 text-color">Trần Thị Lan</h5>
+                          <span
+                            class="d-flex flex-row align-items-center justify-content-start fs-14 fw-700 text-highlight"
+                          >
+                            <img src="./assets/icons/star.svg" class="icon pr-1 -mt-1" alt="" />
+                            8/10
+                          </span>
+                        </div>
+                        <div>
+                          <h6 class="fs-14 fw-700 text-color text-right">Đại học Quốc gia Hà Nội</h6>
+                          <span class="text-right">Tiến sĩ quản trị kinh doanh</span>
+                        </div>
+                      </div>
+                    </div>
+                    <button
+                      type="button"
+                      class="btn w-full py-2 fs-14 fw-700 text-primary border-primary d-flex flex-row align-items-center justify-content-center"
+                    >
+                      Xem thêm
+                      <img src="./assets/icons/chevron-down.svg" class="icon pl-2" alt="" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-5 relative">
+                <div class="program_overview">
+                  <div class="overview_dco"></div>
+                  <div class="overview_header"><h4 class="overview_title">Chương trình đào tạo</h4></div>
+                  <div class="overview_body">
+                    <div class="d-flex flex-row align-items-center justify-content-start">
+                      <img src="./assets/icons/rating 4.svg" class="icon" alt="" />
+                      <div class="pl-3 d-flex flex-column align-items-start justify-content-start">
+                        <span class="fs-16 fw-700 text-color">15.000.000 VND</span>
+                        <span class="fs-16 fw-400 text-color">6 khóa học</span>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-row align-items-center justify-content-start">
+                      <img src="./assets/icons/rating 2.svg" class="icon" alt="" />
+                      <div class="pl-3 d-flex flex-column align-items-start justify-content-start">
+                        <span class="fs-16 fw-700 text-color">12 tuần</span>
+                        <span class="fs-16 fw-400 text-color">6-18 giờ mỗi tuần</span>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-row align-items-center justify-content-start">
+                      <img src="./assets/icons/rating 1.svg" class="icon" alt="" />
+                      <div class="pl-3 d-flex flex-column align-items-start justify-content-start">
+                        <span class="fs-16 fw-700 text-color">Hướng dẫn chuyên gia</span>
+                        <span class="fs-16 fw-400 text-color">6 khóa học nâng cao và kỹ năng</span>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-row align-items-center justify-content-start">
+                      <img src="./assets/icons/rating 3.svg" class="icon" alt="" />
+                      <div class="pl-3 d-flex flex-column align-items-start justify-content-start">
+                        <span class="fs-16 fw-700 text-color">Chủ động</span>
+                        <span class="fs-16 fw-400 text-color">Tiến bộ với tốc độ riêng của bạn</span>
+                      </div>
+                    </div>
+
+                    <button type="button" class="btn">
+                      Bắt đầu ngay
+                      <img src="./assets/icons/w-arrow-right.svg" class="icon" alt="" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="d-flex mx-0 align-items-start align-items-lg-center justify-content-between relative">
+                <div class="row align-items-start justify-content-start">
+                  <div class="col-6 col-lg-3 mb-4 my-lg-4">
+                    <div class="pb-4">
+                      <img src="./assets/images/w_VNMOOC.VN.png" class="vnmooc" alt="" />
+                    </div>
+                    <p class="text-white text-italic" style="line-height: 2">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                      the industry's
+                    </p>
+                  </div>
+                  <div class="col-6 col-lg-3 mb-4 my-lg-4">
+                    <h4 class="footer_title">Liên hệ</h4>
+                    <ul>
+                      <li class="mb-2">
+                        <a href="" class="text-white">Trung tâm hỗ trợ</a>
+                      </li>
+                      <li class="mb-2">
+                        <a href="" class="text-white">Câu hỏi thường gặp</a>
+                      </li>
+                      <li class="mb-2">
+                        <a href="" class="text-white">Hướng dẫn sử dụng</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-6 col-lg-3 mb-4 my-lg-4">
+                    <h4 class="footer_title">Chính sách</h4>
+                    <ul>
+                      <li class="mb-2">
+                        <a href="" class="text-white">Điều khoản dịch vụ</a>
+                      </li>
+                      <li class="mb-2">
+                        <a href="" class="text-white">Chính sách bảo mật</a>
+                      </li>
+                      <li class="mb-2">
+                        <a href="" class="text-white">Điều khoản thanh toán</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="footer_social col-6 col-lg-3 mb-4 my-lg-4">
+                    <h4 class="footer_title">Kênh truyền thông</h4>
+                    <ul class="d-flex align-items-center justify-content-start">
+                      <li class="d-flex align-items-center justify-content-center mr-2 mr-sm-4">
+                        <a href="" class="text-white">
+                          <i class="bi bi-facebook"></i>
+                        </a>
+                      </li>
+                      <li class="d-flex align-items-center justify-content-center mr-2 mr-sm-4">
+                        <a href="" class="text-white"><i class="bi bi-twitter"></i></a>
+                      </li>
+                      <li class="d-flex align-items-center justify-content-center mr-2 mr-sm-4">
+                        <a href="" class="text-white"><i class="bi bi-youtube"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="footer_contact">
+                  <ul>
+                    <li class="mb-4">
+                      <button type="button" class="btn btn-lg rounded-full bg-white">
+                        <i class="bi bi-telephone-fill" style="font-size: 24px; color: #1ee117"></i>
+                      </button>
+                    </li>
+                    <li class="mb-4">
+                      <button
+                        type="button"
+                        class="btn btn-lg rounded-full bg-white d-flex align-items-center justify-content-center"
+                      >
+                        <img src="./assets/images/Vector.png" alt="" />
+                      </button>
+                    </li>
+                    <li class="mb-4">
+                      <button
+                        type="button"
+                        class="btn btn-lg rounded-full bg-white d-flex align-items-center justify-content-center"
+                      >
+                        <img src="./assets/images/amivatar 1.png" alt="" />
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Header Menu Modal -->
+      <div class="header_menu_modal">
+        <div class="header_menu_content">
+          <nav class="navbar d-flex flex-column align-items-start">
+            <div class="header_menu_login">
+              <button type="button" class="btn px-0">ĐÀO TẠO DOANH NGHIỆP</button>
+              <button type="button" class="btn px-0 mb_login_btn" data-toggle="modal" data-target="#loginModal">
+                ĐĂNG NHẬP/ ĐĂNG KÍ
+              </button>
+            </div>
+            <div class="separator"></div>
+            <div class="header_menu">
+              <ul class="navbar-nav mx-auto">
+                <li
+                  class="nav-item navbar-toggler cursor-pointer"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#navbarToggleCourses"
+                  aria-controls="navbarToggleCourses"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  Khóa học
+                  <i class="bi bi-chevron-down ml-2" aria-hidden="true"></i>
+                </li>
+                <div class="collapse" id="navbarToggleCourses">
+                  <div class="px-4">
+                    <ul>
+                      <li class="py-1"><a href="/">Vật lí</a></li>
+                      <li class="py-1"><a href="/">Công nghệ thông tin</a></li>
+                      <li class="py-1"><a href="/">Đào tạo thạc sĩ</a></li>
+                      <li class="py-1"><a href="/">Kĩ năng sống</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <li
+                  class="nav-item navbar-toggler cursor-pointer"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#navbarToggleEducationProgram"
+                  aria-controls="navbarToggleEducationProgram"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  Chương trình đào tạo
+                  <i class="bi bi-chevron-down ml-2" aria-hidden="true"></i>
+                </li>
+                <div class="collapse" id="navbarToggleEducationProgram">
+                  <div class="px-4">
+                    <ul>
+                      <li class="py-1"><a href="/">Vật lí</a></li>
+                      <li class="py-1"><a href="/">Công nghệ thông tin</a></li>
+                      <li class="py-1"><a href="/">Đào tạo thạc sĩ</a></li>
+                      <li class="py-1"><a href="/">Kĩ năng sống</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <li class="nav-item cursor-pointer"><a href="/don_vi_dao_tao.html">Đơn vị đào tạo</a></li>
+              </ul>
+            </div>
+            <form class="nav_form_search d-flex flex-row align-items-center justify-content-start">
+              <button class="btn search_btn" type="submit">
+                <i class="bi bi-search" aria-hidden="true"></i>
+              </button>
+              <input class="nav_search_input" type="search" placeholder="Tìm kiếm" aria-label="Search" />
+            </form>
+          </nav>
+        </div>
+
+        <button type="button" class="btn header_menu_close_btn">
+          <i class="bi bi-x-lg"></i>
+        </button>
+      </div>
+
+      <!-- Login Modal -->
+      <div
+        class="modal fade"
+        id="loginModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="loginModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content login_modal">
+            <div class="modal-header flex-column border-0 p-0 relative">
+              <h5 class="modal-title" id="exampleModalLabel">Đăng nhập</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <i class="bi bi-x-lg" aria-hidden="true"></i>
+              </button>
+              <p class="">
+                Bạn chưa có tài khoản ?
+                <button
+                  type="button"
+                  class="cursor-pointer register_account"
+                  data-dismiss="modal"
+                  data-toggle="modal"
+                  data-target="#registerModal"
+                >
+                  Tạo tài khoản
+                </button>
+              </p>
+            </div>
+            <div class="modal-body p-0 mt-4">
+              <form>
+                <div class="form-group mb-4">
+                  <label class="form-label" for="Email">Email</label>
+                  <input id="Email" class="form-input" type="text" />
+                </div>
+                <div class="form-group mb-4">
+                  <label class="form-label" for="Password">Mật khẩu</label>
+                  <input id="Password" class="form-input" type="password" />
+                  <button type="button" class="show_password cursor-pointer"><i class="bi bi-eye-fill"></i></button>
+                </div>
+                <div class="d-flex flex-row mb-4 align-items-center justify-content-between">
+                  <a class="reset_password" href="/">Quên mật khẩu?</a>
+                  <button type="submit" class="btn login_modal_btn cursor-pointer">Đăng nhập</button>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer p-0 border-0 flex-column">
+              <div class="platform_suggestions mb-4 d-flex flex-row align-items-center">
+                <span class="mr-2"></span>
+                Hoặc đăng nhập bằng
+                <span class="ml-2"></span>
+              </div>
+              <div class="w-full d-flex flex-row align-items-center justify-content-between">
+                <button
+                  class="platform_btn cursor-pointer mr-2 d-flex flex-row align-items-center justify-content-center"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16" viewBox="0 0 48 48">
+                    <path
+                      fill="#FFC107"
+                      d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"
+                    ></path>
+                    <path
+                      fill="#FF3D00"
+                      d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"
+                    ></path>
+                    <path
+                      fill="#4CAF50"
+                      d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"
+                    ></path>
+                    <path
+                      fill="#1976D2"
+                      d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"
+                    ></path>
+                  </svg>
+                  <span class="ml-3">Google</span>
+                </button>
+                <button
+                  class="platform_btn cursor-pointer ml-2 d-flex flex-row align-items-center justify-content-center"
+                >
+                  <i class="bi bi-facebook"></i><span class="ml-3">Facebook</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Register Modal -->
+      <div
+        class="modal fade"
+        id="registerModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="registerModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content login_modal register_modal">
+            <div class="modal-header flex-column border-0 p-0 relative">
+              <h5 class="modal-title" id="exampleModalLabel">Tạo tài khoản</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <i class="bi bi-x-lg" aria-hidden="true"></i>
+              </button>
+              <p class="">
+                Đã có tài khoản ?
+                <button
+                  type="button"
+                  class="cursor-pointer register_account"
+                  data-dismiss="modal"
+                  data-toggle="modal"
+                  data-target="#loginModal"
+                >
+                  Đăng nhập
+                </button>
+              </p>
+            </div>
+            <div class="modal-body p-0 mt-4">
+              <form>
+                <div class="form-group mb-4">
+                  <label class="form-label" for="fullName">Họ và tên</label>
+                  <input id="fullName" class="form-input" type="text" />
+                </div>
+                <div class="form-group mb-4">
+                  <label class="form-label" for="date">Ngày sinh</label>
+                  <input
+                    id="date"
+                    class="form-input"
+                    onfocus="(this.type='date')"
+                    onblur="if(this.value==''){this.type='text'}"
+                  />
+                </div>
+                <div class="form-group mb-4">
+                  <label class="form-label" for="email">Email</label>
+                  <input id="email" class="form-input" type="text" />
+                </div>
+                <div class="form-group mb-4">
+                  <label class="form-label" for="password">Mật khẩu</label>
+                  <input id="password" class="form-input" type="password" />
+                  <button type="button" class="show_password cursor-pointer"><i class="bi bi-eye-fill"></i></button>
+                </div>
+                <div class="form-group mb-4">
+                  <label class="form-label" for="confirmPassword">Xác nhận lại mật khẩu</label>
+                  <input id="confirmPassword" class="form-input" type="password" />
+                  <button type="button" class="show_password cursor-pointer"><i class="bi bi-eye-fill"></i></button>
+                </div>
+                <div class="d-flex flex-row mb-4 align-items-center justify-content-between">
+                  <button type="submit" class="btn w-full login_modal_btn cursor-pointer">Tạo tài khoản</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./theme/unicat/js/jquery-3.2.1.min.js"></script>
+    <script src="./assets/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./theme/unicat/styles/bootstrap4/popper.js"></script>
+
+    <script type="text/javascript" src="./theme/unicat/plugins/slick-1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="./theme/unicat/js/slider.js"></script>
+    <script type="text/javascript" src="./theme/unicat/js/home_page.js"></script>
+    <script type="text/javascript" src="./theme/unicat/js/filter.js"></script>
+  </body>
+</html>
