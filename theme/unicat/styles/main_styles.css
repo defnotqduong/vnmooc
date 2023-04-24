@@ -3,6 +3,7 @@
 
 :root {
   --primary-color: #123060;
+  --green-color: #378566;
   --secondary-color: #4783c9;
   --highlight-color: #e7ad5a;
   --white: #ffffff;
@@ -63,18 +64,21 @@ input[type="date"]::placeholder {
   color: transparent;
 }
 
-button,
-button:focus {
+button {
+  background: transparent;
   border: none;
   outline: none;
-  background-color: transparent;
-
   box-shadow: none;
 }
 
-button.btn,
-button.btn:focus {
+button:focus {
+  border: none;
   outline: none;
+  box-shadow: none;
+}
+
+.btn,
+.btn:focus {
   border: none;
   box-shadow: none;
 }
@@ -303,6 +307,10 @@ img.vnmooc {
 
 .rounded-full {
   border-radius: 50%;
+}
+
+.rounded-sm {
+  border-radius: 4px;
 }
 
 .border-primary {

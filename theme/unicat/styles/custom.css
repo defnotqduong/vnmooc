@@ -42,6 +42,92 @@
 }
 
 /* ******************************
+    Chọn chủ đề
+*********************************/
+
+.subjects_container {
+  margin: 36px 0 44px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.subjects_container .title p {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+.subjects_container .title h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+.subject,
+.subject_choose {
+  height: 180px;
+
+  padding: 36px 28px;
+  margin-bottom: 32px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+}
+
+.subject {
+  background: var(--white);
+  box-shadow: 0px 0px 8px 1px rgba(132, 132, 132, 0.16);
+}
+
+.subject_choose {
+  background: #e9f9f0;
+  border: 1px solid var(--green-color);
+}
+
+.subject_title {
+  margin-top: 24px;
+
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+.subjects_container .btn_wrap button {
+  min-width: 170px;
+  padding: 8px;
+
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.subjects_container .btn_wrap button:nth-child(1) {
+  margin-right: 30px;
+
+  color: var(--primary-color);
+
+  background: var(--white);
+
+  border: 1px solid var(--primary-color);
+  border-radius: 6px;
+}
+
+.subjects_container .btn_wrap button:nth-child(2) {
+  color: var(--white);
+
+  background: var(--primarycolor);
+  border-radius: 6px;
+}
+
+/* ******************************
     Trang chủ
 *********************************/
 
