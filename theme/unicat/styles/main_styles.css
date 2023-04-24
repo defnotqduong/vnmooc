@@ -72,6 +72,13 @@ button:focus {
   box-shadow: none;
 }
 
+button.btn,
+button.btn:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
 img {
   object-fit: cover;
   object-position: center;
@@ -206,6 +213,14 @@ img.vnmooc {
 
 .w-60 {
   width: 60%;
+}
+
+.w-40 {
+  width: 40%;
+}
+
+.w-35 {
+  width: 35%;
 }
 
 .flex-1 {

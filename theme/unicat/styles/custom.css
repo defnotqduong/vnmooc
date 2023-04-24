@@ -1,4 +1,47 @@
 /* ******************************
+    Chào mừng
+*********************************/
+
+.welcome_container {
+  margin: 100px 0;
+
+  color: var(--primary-color);
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.welcome_container h2 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.welcome_container p {
+  font-size: 16px;
+}
+
+.welcome_btn {
+  width: 96%;
+
+  margin-top: 50px;
+
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--white);
+
+  background: #e7ad5a;
+  border-radius: 8px;
+}
+
+.welcome_btn:hover,
+.welcome_btn:focus {
+  background: #e7ad5a;
+  opacity: 0.9;
+}
+
+/* ******************************
     Trang chủ
 *********************************/
 
