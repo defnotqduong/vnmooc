@@ -142,10 +142,6 @@
   background: var(--white);
 }
 
-.account_content {
-  border-left: 1px solid var(--border-color);
-}
-
 .account_nav .title {
   padding-bottom: 12px;
 
@@ -213,7 +209,9 @@
 }
 
 .account_content {
-  padding-left: 30px;
+  padding: 0 0 40px 30px;
+
+  border-left: 1px solid var(--border-color);
 }
 
 .acc_content_wrap {
@@ -267,6 +265,19 @@
 .account_edit_container .research {
   border-width: 1px;
   box-shadow: none;
+}
+
+.account_edit_container ul {
+  padding-left: 14px;
+  list-style: disc;
+
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+.account_edit_container ul li {
+  margin-bottom: 22px;
 }
 
 .account_edit_container .edit_btn {
@@ -323,6 +334,42 @@
   justify-content: center;
 
   border-radius: 8px;
+}
+
+.account_edit_container .bin {
+  padding: 22px;
+  margin-bottom: 22px;
+
+  background: rgba(194, 194, 194, 0.3);
+  border-radius: 50%;
+}
+
+.account_edit_container h4 {
+  margin-bottom: 32px;
+
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.delete_acc_btn {
+  margin-top: 18px;
+  padding: 10px 32px;
+
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--primary-color);
+
+  background: rgba(18, 48, 96, 0.08);
+
+  border: 1px solid var(--primary-color);
+  border-radius: 8px;
+}
+
+.delete_acc_btn:hover {
+  color: var(--white);
+
+  background: var(--red-color);
+  border: 1px solid var(--red-color);
 }
 
 /* ******************************
