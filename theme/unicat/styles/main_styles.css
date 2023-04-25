@@ -12,6 +12,7 @@
   --border-color: #c2c2c2;
   --border-input-color: #b5c6e1;
   --text-color: #3d3d3d;
+  --link-color: #1363b9;
 }
 
 * {
@@ -72,14 +73,12 @@ button {
 }
 
 button:focus {
-  border: none;
   outline: none;
   box-shadow: none;
 }
 
 .btn,
 .btn:focus {
-  border: none;
   box-shadow: none;
 }
 
@@ -125,6 +124,10 @@ img.vnmooc {
 
 .text-color {
   color: var(--text-color) !important;
+}
+
+.text-green {
+  color: var(--green-color);
 }
 
 .fs-10 {
@@ -187,6 +190,10 @@ img.vnmooc {
   background: var(--white);
 }
 
+.link-color {
+  color: var(--link-color);
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -225,6 +232,10 @@ img.vnmooc {
 
 .w-35 {
   width: 35%;
+}
+
+.w-30 {
+  width: 30%;
 }
 
 .flex-1 {
@@ -269,6 +280,14 @@ img.vnmooc {
 
 .px-20px {
   padding: 0 20px;
+}
+
+.my-20px {
+  margin: 20px 0;
+}
+
+.mx-20px {
+  margin: 0 20px;
 }
 
 .title {
