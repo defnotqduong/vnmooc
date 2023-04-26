@@ -35,16 +35,16 @@
                 <div class="col">
                   <div class="top_bar_content d-flex flex-row align-items-center justify-content-start">
                     <ul class="top_bar_contact_list d-flex align-items-center">
-                      <li class="py-1 pr-2 mr-2">
-                        <i class="bi bi-telephone" aria-hidden="true"></i>
+                      <li class="py-1 pr-2 mr-4 d-flex flex-row align-items-center justify-content-start">
+                        <img src="./assets/icons/call.svg" class="mr-2" alt="" />
                         <a href="tel:0123456789" class="px-1">0123456789</a>
                       </li>
-                      <li class="py-1 pr-2 mr-3">
-                        <i class="bi bi-printer" aria-hidden="true"></i>
+                      <li class="py-1 pr-2 mr-4 d-flex flex-row align-items-center justify-content-start">
+                        <img src="./assets/icons/printer.svg" class="mr-2" alt="" />
                         <a href="0123456789" class="px-2">0123456789</a>
                       </li>
-                      <li class="py-1 pr-2 mr-3">
-                        <i class="bi bi-envelope" aria-hidden="true"></i>
+                      <li class="py-1 pr-2 mr-4 d-flex flex-row align-items-center justify-content-start">
+                        <img src="./assets/icons/sms.svg" class="mr-2" alt="" />
                         <a href="mailto:@contact.vn" class="px-2">@contact.vn</a>
                       </li>
                     </ul>
@@ -71,7 +71,7 @@
                 >
                   <div class="logo_container">
                     <a href="/">
-                      <img class="logo_image" src="./assets/images/VNMOOC.VN.png" alt="Logo" />
+                      <img class="logo_image" src="./assets/icons/h-VNMOOC.VN.svg" alt="Logo" />
                     </a>
                   </div>
                   <button
@@ -278,7 +278,7 @@
                 </nav>
                 <div class="filter_container d-flex flex-row align-items-center justify-content-start">
                   <button type="button" class="cursor-pointer text-primary mr-3" style="font-size: 22px">
-                    <i class="bi bi-arrow-repeat"></i>
+                    <img src="./assets/icons/reload.svg" alt="" />
                   </button>
                   <ul class="filter_list pl-3 d-flex align-items-center justify-content-between">
                     <li class="filter_item active cursor-pointer text-italic">
@@ -328,73 +328,13 @@
                         <p class="card-text">
                           Thiết kế học phần theo tiếp cận giáo dục dựa trên chuẩn đầu ra (Outcome-Based Education)
                         </p>
-                        <div class="card_rating d-flex align-items-end justify-content-start">
-                          <i class="bi bi-star mr-2" aria-hidden="true"></i>
+                        <div class="card_rating d-flex align-items-center justify-content-start">
+                          <img src="./assets/icons/star-sm.svg" class="mr-2" alt="" />
                           <span class="text-center">8/10</span>
                         </div>
 
                         <!-- My Course Progress -->
-                        <div class="course_progress mb-1">
-                          <div class="course_percent_wrap d-flex align-items-center justify-content-start">
-                            <div class="course_percent flex-1">
-                              <div></div>
-                            </div>
-                            <span>80 %</span>
-                          </div>
-
-                          <div class="course_register d-none">
-                            <div class="course_register_success d-flex align-items-center justify-content-start">
-                              <i class="bi bi-check-circle-fill"></i>
-                              <span class="ml-2">Đã đăng kí thi</span>
-                            </div>
-
-                            <div class="course_register_failed d-none align-items-center justify-content-start">
-                              <i class="bi bi-exclamation-circle-fill"></i>
-                              <span class="ml-2">Chưa đăng kí thi</span>
-                            </div>
-                          </div>
-
-                          <div class="course_test d-none">
-                            <div class="course_test_passed d-none align-items-center justify-content-center">
-                              <i class="bi bi-check2"></i>
-                              <span class="ml-2">Đạt</span>
-                            </div>
-                            <div class="course_test_failed d-flex align-items-center justify-content-center">
-                              <i class="bi bi-x-circle-fill"></i>
-                              <span class="ml-2">Không đạt</span>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="course_details d-flex align-items-center justify-content-between pt-3">
-                          <span>1 Khóa học</span>
-                          <button type="button" class="btn bg-primary cursor-pointer p-0">
-                            <i class="bi bi-arrow-right" aria-hidden="true"></i>
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-wrap col-6 col-lg-4 col-xl-3">
-                    <div class="card px-0 course_item">
-                      <img class="card-img-top" src="./assets/images/image 42.png" alt="Courses image" />
-                      <div class="card_price">
-                        <div class="card_logo">
-                          <img src="./assets/images/university/Logo_ULIS.png" alt="ULIS" />
-                        </div>
-                        <h4 class="text-center mb-0">Miễn phí</h4>
-                      </div>
-                      <div class="card-body p-2 p-md-3">
-                        <h5 class="card-title">Đại Học Bách Khoa Hà Nội</h5>
-                        <p class="card-text">
-                          Thiết kế học phần theo tiếp cận giáo dục dựa trên chuẩn đầu ra (Outcome-Based Education)
-                        </p>
-                        <div class="card_rating d-flex align-items-end justify-content-start">
-                          <i class="bi bi-star mr-2" aria-hidden="true"></i>
-                          <span class="text-center">8/10</span>
-                        </div>
-
-                        <!-- My course progress -->
-                        <div class="course_progress mb-1">
+                        <div class="course_progress mb-1 d-none">
                           <div class="course_percent_wrap d-none align-items-center justify-content-start">
                             <div class="course_percent flex-1">
                               <div></div>
@@ -402,274 +342,39 @@
                             <span>80 %</span>
                           </div>
 
-                          <div class="course_register d-none">
-                            <div class="course_register_success d-flex align-items-center justify-content-start">
-                              <i class="bi bi-check-circle-fill"></i>
-                              <span class="ml-2">Đã đăng kí thi</span>
-                            </div>
-
-                            <div class="course_register_failed d-none align-items-center justify-content-start">
-                              <i class="bi bi-exclamation-circle-fill"></i>
-                              <span class="ml-2">Chưa đăng kí thi</span>
-                            </div>
-                          </div>
-
-                          <div class="course_test d-block">
-                            <div class="course_test_passed d-flex align-items-center justify-content-center">
-                              <i class="bi bi-check2"></i>
-                              <span class="ml-2">Đạt</span>
-                            </div>
-                            <div class="course_test_failed d-none align-items-center justify-content-center">
-                              <i class="bi bi-x-circle-fill"></i>
-                              <span class="ml-2">Không đạt</span>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="course_details d-flex align-items-center justify-content-between pt-3">
-                          <span>1 Khóa học</span>
-                          <button type="button" class="btn bg-primary cursor-pointer p-0">
-                            <i class="bi bi-arrow-right" aria-hidden="true"></i>
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-wrap col-6 col-lg-4 col-xl-3">
-                    <div class="card px-0 course_item">
-                      <img class="card-img-top" src="./assets/images/image 42.png" alt="Courses image" />
-                      <div class="card_price">
-                        <div class="card_logo">
-                          <img src="./assets/images/university/Logo_FTU.png" alt="FTU" />
-                        </div>
-                        <h4 class="text-center mb-0">499.000đ</h4>
-                      </div>
-                      <div class="card-body p-2 p-md-3">
-                        <h5 class="card-title">Đại Học Bách Khoa Hà Nội</h5>
-                        <p class="card-text">
-                          Thiết kế học phần theo tiếp cận giáo dục dựa trên chuẩn đầu ra (Outcome-Based Education)
-                        </p>
-                        <div class="card_rating d-flex align-items-end justify-content-start">
-                          <i class="bi bi-star mr-2" aria-hidden="true"></i>
-                          <span class="text-center">8/10</span>
-                        </div>
-
-                        <!-- My course progress -->
-                        <div class="course_progress mb-1">
-                          <div class="course_percent_wrap d-none align-items-center justify-content-start">
-                            <div class="course_percent flex-1">
-                              <div></div>
-                            </div>
-                            <span>80 %</span>
-                          </div>
-
-                          <div class="course_register d-none">
-                            <div class="course_register_success d-flex align-items-center justify-content-start">
-                              <i class="bi bi-check-circle-fill"></i>
-                              <span class="ml-2">Đã đăng kí thi</span>
-                            </div>
-
-                            <div class="course_register_failed d-none align-items-center justify-content-start">
-                              <i class="bi bi-exclamation-circle-fill"></i>
-                              <span class="ml-2">Chưa đăng kí thi</span>
-                            </div>
-                          </div>
-
-                          <div class="course_test">
-                            <div class="course_test_passed d-none align-items-center justify-content-center">
-                              <i class="bi bi-check2"></i>
-                              <span class="ml-2">Đạt</span>
-                            </div>
-                            <div class="course_test_failed d-flex align-items-center justify-content-center">
-                              <i class="bi bi-x-circle-fill"></i>
-                              <span class="ml-2">Không đạt</span>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="course_details d-flex align-items-center justify-content-between pt-3">
-                          <span>1 Khóa học</span>
-                          <button type="button" class="btn bg-primary cursor-pointer p-0">
-                            <i class="bi bi-arrow-right" aria-hidden="true"></i>
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-wrap col-6 col-lg-4 col-xl-3">
-                    <div class="card px-0 course_item">
-                      <img class="card-img-top" src="./assets/images/image 42.png" alt="Courses image" />
-                      <div class="card_price">
-                        <div class="card_logo">
-                          <img src="./assets/images/university/Logo_HANU.png" alt="HANU" />
-                        </div>
-                        <h4 class="text-center mb-0">499.000đ</h4>
-                      </div>
-                      <div class="card-body p-2 p-md-3">
-                        <h5 class="card-title">Đại Học Bách Khoa Hà Nội</h5>
-                        <p class="card-text">
-                          Thiết kế học phần theo tiếp cận giáo dục dựa trên chuẩn đầu ra (Outcome-Based Education)
-                        </p>
-                        <div class="card_rating d-flex align-items-end justify-content-start">
-                          <i class="bi bi-star mr-2" aria-hidden="true"></i>
-                          <span class="text-center">8/10</span>
-                        </div>
-
-                        <!-- My course progress -->
-                        <div class="course_progress mb-1">
-                          <div class="course_percent_wrap d-none align-items-center justify-content-start">
-                            <div class="course_percent flex-1">
-                              <div></div>
-                            </div>
-                            <span>80 %</span>
-                          </div>
-
-                          <div class="course_register d-flex">
-                            <div class="course_register_success d-flex align-items-center justify-content-start">
-                              <i class="bi bi-check-circle-fill"></i>
-                              <span class="ml-2">Đã đăng kí thi</span>
-                            </div>
-
-                            <div class="course_register_failed d-none align-items-center justify-content-start">
-                              <i class="bi bi-exclamation-circle-fill"></i>
-                              <span class="ml-2">Chưa đăng kí thi</span>
-                            </div>
-                          </div>
-
-                          <div class="course_test d-none">
-                            <div class="course_test_passed d-none align-items-center justify-content-center">
-                              <i class="bi bi-check2"></i>
-                              <span class="ml-2">Đạt</span>
-                            </div>
-                            <div class="course_test_failed d-flex align-items-center justify-content-center">
-                              <i class="bi bi-x-circle-fill"></i>
-                              <span class="ml-2">Không đạt</span>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="course_details d-flex align-items-center justify-content-between pt-3">
-                          <span>1 Khóa học</span>
-                          <button type="button" class="btn bg-primary cursor-pointer p-0">
-                            <i class="bi bi-arrow-right" aria-hidden="true"></i>
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-wrap col-6 col-lg-4 col-xl-3">
-                    <div class="card px-0 course_item">
-                      <img class="card-img-top" src="./assets/images/image 42.png" alt="Courses image" />
-                      <div class="card_price">
-                        <div class="card_logo">
-                          <img src="./assets/images/university/Logo_UEB.png" alt="UEB" />
-                        </div>
-                        <h4 class="text-center mb-0">Miễn phí</h4>
-                      </div>
-                      <div class="card-body p-2 p-md-3">
-                        <h5 class="card-title">Đại Học Bách Khoa Hà Nội</h5>
-                        <p class="card-text">
-                          Thiết kế học phần theo tiếp cận giáo dục dựa trên chuẩn đầu ra (Outcome-Based Education)
-                        </p>
-                        <div class="card_rating d-flex align-items-end justify-content-start">
-                          <i class="bi bi-star mr-2" aria-hidden="true"></i>
-                          <span class="text-center">8/10</span>
-                        </div>
-
-                        <!-- My course progress -->
-                        <div class="course_progress mb-1">
-                          <div class="course_percent_wrap d-none align-items-center justify-content-start">
-                            <div class="course_percent flex-1">
-                              <div></div>
-                            </div>
-                            <span>80 %</span>
-                          </div>
-
-                          <div class="course_register d-flex">
+                          <div class="course_register d-block">
                             <div class="course_register_success d-none align-items-center justify-content-start">
-                              <i class="bi bi-check-circle-fill"></i>
+                              <img src="./assets/icons/c-check 1.svg" alt="" />
                               <span class="ml-2">Đã đăng kí thi</span>
                             </div>
 
                             <div class="course_register_failed d-flex align-items-center justify-content-start">
-                              <i class="bi bi-exclamation-circle-fill"></i>
+                              <img src="./assets/icons/c-warning 2.svg" alt="" />
                               <span class="ml-2">Chưa đăng kí thi</span>
                             </div>
                           </div>
 
                           <div class="course_test d-none">
                             <div class="course_test_passed d-none align-items-center justify-content-center">
-                              <i class="bi bi-check2"></i>
+                              <img src="./assets/icons/g-check 1.svg" alt="" />
                               <span class="ml-2">Đạt</span>
                             </div>
                             <div class="course_test_failed d-flex align-items-center justify-content-center">
-                              <i class="bi bi-x-circle-fill"></i>
+                              <img src="./assets/icons/c-remove 1.svg" alt="" />
                               <span class="ml-2">Không đạt</span>
                             </div>
                           </div>
                         </div>
                         <div class="course_details d-flex align-items-center justify-content-between pt-3">
                           <span>1 Khóa học</span>
-                          <button type="button" class="btn bg-primary cursor-pointer p-0">
-                            <i class="bi bi-arrow-right" aria-hidden="true"></i>
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-wrap col-6 col-lg-4 col-xl-3">
-                    <div class="card px-0 course_item">
-                      <img class="card-img-top" src="./assets/images/image 42.png" alt="Courses image" />
-                      <div class="card_price">
-                        <div class="card_logo">
-                          <img src="./assets/images/university/Logo_Hust.png" alt="HUST" />
-                        </div>
-                        <h4 class="text-center mb-0">499.000đ</h4>
-                      </div>
-                      <div class="card-body p-2 p-md-3">
-                        <h5 class="card-title">Đại Học Bách Khoa Hà Nội</h5>
-                        <p class="card-text">
-                          Thiết kế học phần theo tiếp cận giáo dục dựa trên chuẩn đầu ra (Outcome-Based Education)
-                        </p>
-                        <div class="card_rating d-flex align-items-end justify-content-start">
-                          <i class="bi bi-star mr-2" aria-hidden="true"></i>
-                          <span class="text-center">8/10</span>
-                        </div>
-
-                        <!-- My course progress -->
-                        <div class="course_progress mb-1">
-                          <div class="course_percent_wrap d-none align-items-center justify-content-start">
-                            <div class="course_percent flex-1">
-                              <div></div>
-                            </div>
-                            <span>80 %</span>
-                          </div>
-
-                          <div class="course_register d-flex">
-                            <div class="course_register_success d-flex align-items-center justify-content-start">
-                              <i class="bi bi-check-circle-fill"></i>
-                              <span class="ml-2">Đã đăng kí thi</span>
-                            </div>
-
-                            <div class="course_register_failed d-none align-items-center justify-content-start">
-                              <i class="bi bi-exclamation-circle-fill"></i>
-                              <span class="ml-2">Chưa đăng kí thi</span>
-                            </div>
-                          </div>
-
-                          <div class="course_test d-none">
-                            <div class="course_test_passed d-none align-items-center justify-content-center">
-                              <i class="bi bi-check2"></i>
-                              <span class="ml-2">Đạt</span>
-                            </div>
-                            <div class="course_test_failed d-flex align-items-center justify-content-center">
-                              <i class="bi bi-x-circle-fill"></i>
-                              <span class="ml-2">Không đạt</span>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="course_details d-flex align-items-center justify-content-between pt-3">
-                          <span>1 Khóa học</span>
-                          <button type="button" class="btn bg-primary cursor-pointer p-0">
-                            <i class="bi bi-arrow-right" aria-hidden="true"></i>
-                          </button>
+                          <a href="/chi_tiet_khoa_hoc.html">
+                            <button
+                              type="button"
+                              class="btn bg-primary cursor-pointer p-0 d-flex flex-row align-items-center justify-content-center"
+                            >
+                              <img src="./assets/icons/left arrow 4.svg" alt="" />
+                            </button>
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -688,48 +393,53 @@
                         <p class="card-text">
                           Thiết kế học phần theo tiếp cận giáo dục dựa trên chuẩn đầu ra (Outcome-Based Education)
                         </p>
-                        <div class="card_rating d-flex align-items-end justify-content-start">
-                          <i class="bi bi-star mr-2" aria-hidden="true"></i>
+                        <div class="card_rating d-flex align-items-center justify-content-start">
+                          <img src="./assets/icons/star-sm.svg" class="mr-2" alt="" />
                           <span class="text-center">8/10</span>
                         </div>
 
-                        <!-- My course progress -->
-                        <div class="course_progress mb-1">
-                          <div class="course_percent_wrap d-flex align-items-center justify-content-start">
+                        <!-- My Course Progress -->
+                        <div class="course_progress mb-1 d-none">
+                          <div class="course_percent_wrap d-none align-items-center justify-content-start">
                             <div class="course_percent flex-1">
                               <div></div>
                             </div>
                             <span>80 %</span>
                           </div>
 
-                          <div class="course_register d-none">
-                            <div class="course_register_success d-flex align-items-center justify-content-start">
-                              <i class="bi bi-check-circle-fill"></i>
+                          <div class="course_register d-block">
+                            <div class="course_register_success d-none align-items-center justify-content-start">
+                              <img src="./assets/icons/c-check 1.svg" alt="" />
                               <span class="ml-2">Đã đăng kí thi</span>
                             </div>
 
-                            <div class="course_register_failed d-none align-items-center justify-content-start">
-                              <i class="bi bi-exclamation-circle-fill"></i>
+                            <div class="course_register_failed d-flex align-items-center justify-content-start">
+                              <img src="./assets/icons/c-warning 2.svg" alt="" />
                               <span class="ml-2">Chưa đăng kí thi</span>
                             </div>
                           </div>
 
                           <div class="course_test d-none">
                             <div class="course_test_passed d-none align-items-center justify-content-center">
-                              <i class="bi bi-check2"></i>
+                              <img src="./assets/icons/g-check 1.svg" alt="" />
                               <span class="ml-2">Đạt</span>
                             </div>
                             <div class="course_test_failed d-flex align-items-center justify-content-center">
-                              <i class="bi bi-x-circle-fill"></i>
+                              <img src="./assets/icons/c-remove 1.svg" alt="" />
                               <span class="ml-2">Không đạt</span>
                             </div>
                           </div>
                         </div>
                         <div class="course_details d-flex align-items-center justify-content-between pt-3">
                           <span>1 Khóa học</span>
-                          <button type="button" class="btn bg-primary cursor-pointer p-0">
-                            <i class="bi bi-arrow-right" aria-hidden="true"></i>
-                          </button>
+                          <a href="/chi_tiet_khoa_hoc.html">
+                            <button
+                              type="button"
+                              class="btn bg-primary cursor-pointer p-0 d-flex flex-row align-items-center justify-content-center"
+                            >
+                              <img src="./assets/icons/left arrow 4.svg" alt="" />
+                            </button>
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -748,13 +458,13 @@
                         <p class="card-text">
                           Thiết kế học phần theo tiếp cận giáo dục dựa trên chuẩn đầu ra (Outcome-Based Education)
                         </p>
-                        <div class="card_rating d-flex align-items-end justify-content-start">
-                          <i class="bi bi-star mr-2" aria-hidden="true"></i>
+                        <div class="card_rating d-flex align-items-center justify-content-start">
+                          <img src="./assets/icons/star-sm.svg" class="mr-2" alt="" />
                           <span class="text-center">8/10</span>
                         </div>
 
-                        <!-- My course progress -->
-                        <div class="course_progress mb-1">
+                        <!-- My Course Progress -->
+                        <div class="course_progress mb-1 d-none">
                           <div class="course_percent_wrap d-none align-items-center justify-content-start">
                             <div class="course_percent flex-1">
                               <div></div>
@@ -762,34 +472,364 @@
                             <span>80 %</span>
                           </div>
 
-                          <div class="course_register d-flex">
-                            <div class="course_register_success d-flex align-items-center justify-content-start">
-                              <i class="bi bi-check-circle-fill"></i>
+                          <div class="course_register d-block">
+                            <div class="course_register_success d-none align-items-center justify-content-start">
+                              <img src="./assets/icons/c-check 1.svg" alt="" />
                               <span class="ml-2">Đã đăng kí thi</span>
                             </div>
 
-                            <div class="course_register_failed d-none align-items-center justify-content-start">
-                              <i class="bi bi-exclamation-circle-fill"></i>
+                            <div class="course_register_failed d-flex align-items-center justify-content-start">
+                              <img src="./assets/icons/c-warning 2.svg" alt="" />
                               <span class="ml-2">Chưa đăng kí thi</span>
                             </div>
                           </div>
 
                           <div class="course_test d-none">
                             <div class="course_test_passed d-none align-items-center justify-content-center">
-                              <i class="bi bi-check2"></i>
+                              <img src="./assets/icons/g-check 1.svg" alt="" />
                               <span class="ml-2">Đạt</span>
                             </div>
                             <div class="course_test_failed d-flex align-items-center justify-content-center">
-                              <i class="bi bi-x-circle-fill"></i>
+                              <img src="./assets/icons/c-remove 1.svg" alt="" />
                               <span class="ml-2">Không đạt</span>
                             </div>
                           </div>
                         </div>
                         <div class="course_details d-flex align-items-center justify-content-between pt-3">
                           <span>1 Khóa học</span>
-                          <button type="button" class="btn bg-primary cursor-pointer p-0">
-                            <i class="bi bi-arrow-right" aria-hidden="true"></i>
-                          </button>
+                          <a href="/chi_tiet_khoa_hoc.html">
+                            <button
+                              type="button"
+                              class="btn bg-primary cursor-pointer p-0 d-flex flex-row align-items-center justify-content-center"
+                            >
+                              <img src="./assets/icons/left arrow 4.svg" alt="" />
+                            </button>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-wrap col-6 col-lg-4 col-xl-3">
+                    <div class="card px-0 course_item">
+                      <img class="card-img-top" src="./assets/images/image 42.png" alt="Courses image" />
+                      <div class="card_price">
+                        <div class="card_logo">
+                          <img src="./assets/images/university/Logo_HNUE.png" alt="HNUE" />
+                        </div>
+                        <h4 class="text-center mb-0">499.000đ</h4>
+                      </div>
+                      <div class="card-body p-2 p-md-3">
+                        <h5 class="card-title">Đại Học Bách Khoa Hà Nội</h5>
+                        <p class="card-text">
+                          Thiết kế học phần theo tiếp cận giáo dục dựa trên chuẩn đầu ra (Outcome-Based Education)
+                        </p>
+                        <div class="card_rating d-flex align-items-center justify-content-start">
+                          <img src="./assets/icons/star-sm.svg" class="mr-2" alt="" />
+                          <span class="text-center">8/10</span>
+                        </div>
+
+                        <!-- My Course Progress -->
+                        <div class="course_progress mb-1 d-none">
+                          <div class="course_percent_wrap d-none align-items-center justify-content-start">
+                            <div class="course_percent flex-1">
+                              <div></div>
+                            </div>
+                            <span>80 %</span>
+                          </div>
+
+                          <div class="course_register d-block">
+                            <div class="course_register_success d-none align-items-center justify-content-start">
+                              <img src="./assets/icons/c-check 1.svg" alt="" />
+                              <span class="ml-2">Đã đăng kí thi</span>
+                            </div>
+
+                            <div class="course_register_failed d-flex align-items-center justify-content-start">
+                              <img src="./assets/icons/c-warning 2.svg" alt="" />
+                              <span class="ml-2">Chưa đăng kí thi</span>
+                            </div>
+                          </div>
+
+                          <div class="course_test d-none">
+                            <div class="course_test_passed d-none align-items-center justify-content-center">
+                              <img src="./assets/icons/g-check 1.svg" alt="" />
+                              <span class="ml-2">Đạt</span>
+                            </div>
+                            <div class="course_test_failed d-flex align-items-center justify-content-center">
+                              <img src="./assets/icons/c-remove 1.svg" alt="" />
+                              <span class="ml-2">Không đạt</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="course_details d-flex align-items-center justify-content-between pt-3">
+                          <span>1 Khóa học</span>
+                          <a href="/chi_tiet_khoa_hoc.html">
+                            <button
+                              type="button"
+                              class="btn bg-primary cursor-pointer p-0 d-flex flex-row align-items-center justify-content-center"
+                            >
+                              <img src="./assets/icons/left arrow 4.svg" alt="" />
+                            </button>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-wrap col-6 col-lg-4 col-xl-3">
+                    <div class="card px-0 course_item">
+                      <img class="card-img-top" src="./assets/images/image 42.png" alt="Courses image" />
+                      <div class="card_price">
+                        <div class="card_logo">
+                          <img src="./assets/images/university/Logo_HNUE.png" alt="HNUE" />
+                        </div>
+                        <h4 class="text-center mb-0">499.000đ</h4>
+                      </div>
+                      <div class="card-body p-2 p-md-3">
+                        <h5 class="card-title">Đại Học Bách Khoa Hà Nội</h5>
+                        <p class="card-text">
+                          Thiết kế học phần theo tiếp cận giáo dục dựa trên chuẩn đầu ra (Outcome-Based Education)
+                        </p>
+                        <div class="card_rating d-flex align-items-center justify-content-start">
+                          <img src="./assets/icons/star-sm.svg" class="mr-2" alt="" />
+                          <span class="text-center">8/10</span>
+                        </div>
+
+                        <!-- My Course Progress -->
+                        <div class="course_progress mb-1 d-none">
+                          <div class="course_percent_wrap d-none align-items-center justify-content-start">
+                            <div class="course_percent flex-1">
+                              <div></div>
+                            </div>
+                            <span>80 %</span>
+                          </div>
+
+                          <div class="course_register d-block">
+                            <div class="course_register_success d-none align-items-center justify-content-start">
+                              <img src="./assets/icons/c-check 1.svg" alt="" />
+                              <span class="ml-2">Đã đăng kí thi</span>
+                            </div>
+
+                            <div class="course_register_failed d-flex align-items-center justify-content-start">
+                              <img src="./assets/icons/c-warning 2.svg" alt="" />
+                              <span class="ml-2">Chưa đăng kí thi</span>
+                            </div>
+                          </div>
+
+                          <div class="course_test d-none">
+                            <div class="course_test_passed d-none align-items-center justify-content-center">
+                              <img src="./assets/icons/g-check 1.svg" alt="" />
+                              <span class="ml-2">Đạt</span>
+                            </div>
+                            <div class="course_test_failed d-flex align-items-center justify-content-center">
+                              <img src="./assets/icons/c-remove 1.svg" alt="" />
+                              <span class="ml-2">Không đạt</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="course_details d-flex align-items-center justify-content-between pt-3">
+                          <span>1 Khóa học</span>
+                          <a href="/chi_tiet_khoa_hoc.html">
+                            <button
+                              type="button"
+                              class="btn bg-primary cursor-pointer p-0 d-flex flex-row align-items-center justify-content-center"
+                            >
+                              <img src="./assets/icons/left arrow 4.svg" alt="" />
+                            </button>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-wrap col-6 col-lg-4 col-xl-3">
+                    <div class="card px-0 course_item">
+                      <img class="card-img-top" src="./assets/images/image 42.png" alt="Courses image" />
+                      <div class="card_price">
+                        <div class="card_logo">
+                          <img src="./assets/images/university/Logo_HNUE.png" alt="HNUE" />
+                        </div>
+                        <h4 class="text-center mb-0">499.000đ</h4>
+                      </div>
+                      <div class="card-body p-2 p-md-3">
+                        <h5 class="card-title">Đại Học Bách Khoa Hà Nội</h5>
+                        <p class="card-text">
+                          Thiết kế học phần theo tiếp cận giáo dục dựa trên chuẩn đầu ra (Outcome-Based Education)
+                        </p>
+                        <div class="card_rating d-flex align-items-center justify-content-start">
+                          <img src="./assets/icons/star-sm.svg" class="mr-2" alt="" />
+                          <span class="text-center">8/10</span>
+                        </div>
+
+                        <!-- My Course Progress -->
+                        <div class="course_progress mb-1 d-none">
+                          <div class="course_percent_wrap d-none align-items-center justify-content-start">
+                            <div class="course_percent flex-1">
+                              <div></div>
+                            </div>
+                            <span>80 %</span>
+                          </div>
+
+                          <div class="course_register d-block">
+                            <div class="course_register_success d-none align-items-center justify-content-start">
+                              <img src="./assets/icons/c-check 1.svg" alt="" />
+                              <span class="ml-2">Đã đăng kí thi</span>
+                            </div>
+
+                            <div class="course_register_failed d-flex align-items-center justify-content-start">
+                              <img src="./assets/icons/c-warning 2.svg" alt="" />
+                              <span class="ml-2">Chưa đăng kí thi</span>
+                            </div>
+                          </div>
+
+                          <div class="course_test d-none">
+                            <div class="course_test_passed d-none align-items-center justify-content-center">
+                              <img src="./assets/icons/g-check 1.svg" alt="" />
+                              <span class="ml-2">Đạt</span>
+                            </div>
+                            <div class="course_test_failed d-flex align-items-center justify-content-center">
+                              <img src="./assets/icons/c-remove 1.svg" alt="" />
+                              <span class="ml-2">Không đạt</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="course_details d-flex align-items-center justify-content-between pt-3">
+                          <span>1 Khóa học</span>
+                          <a href="/chi_tiet_khoa_hoc.html">
+                            <button
+                              type="button"
+                              class="btn bg-primary cursor-pointer p-0 d-flex flex-row align-items-center justify-content-center"
+                            >
+                              <img src="./assets/icons/left arrow 4.svg" alt="" />
+                            </button>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-wrap col-6 col-lg-4 col-xl-3">
+                    <div class="card px-0 course_item">
+                      <img class="card-img-top" src="./assets/images/image 42.png" alt="Courses image" />
+                      <div class="card_price">
+                        <div class="card_logo">
+                          <img src="./assets/images/university/Logo_HNUE.png" alt="HNUE" />
+                        </div>
+                        <h4 class="text-center mb-0">499.000đ</h4>
+                      </div>
+                      <div class="card-body p-2 p-md-3">
+                        <h5 class="card-title">Đại Học Bách Khoa Hà Nội</h5>
+                        <p class="card-text">
+                          Thiết kế học phần theo tiếp cận giáo dục dựa trên chuẩn đầu ra (Outcome-Based Education)
+                        </p>
+                        <div class="card_rating d-flex align-items-center justify-content-start">
+                          <img src="./assets/icons/star-sm.svg" class="mr-2" alt="" />
+                          <span class="text-center">8/10</span>
+                        </div>
+
+                        <!-- My Course Progress -->
+                        <div class="course_progress mb-1 d-none">
+                          <div class="course_percent_wrap d-none align-items-center justify-content-start">
+                            <div class="course_percent flex-1">
+                              <div></div>
+                            </div>
+                            <span>80 %</span>
+                          </div>
+
+                          <div class="course_register d-block">
+                            <div class="course_register_success d-none align-items-center justify-content-start">
+                              <img src="./assets/icons/c-check 1.svg" alt="" />
+                              <span class="ml-2">Đã đăng kí thi</span>
+                            </div>
+
+                            <div class="course_register_failed d-flex align-items-center justify-content-start">
+                              <img src="./assets/icons/c-warning 2.svg" alt="" />
+                              <span class="ml-2">Chưa đăng kí thi</span>
+                            </div>
+                          </div>
+
+                          <div class="course_test d-none">
+                            <div class="course_test_passed d-none align-items-center justify-content-center">
+                              <img src="./assets/icons/g-check 1.svg" alt="" />
+                              <span class="ml-2">Đạt</span>
+                            </div>
+                            <div class="course_test_failed d-flex align-items-center justify-content-center">
+                              <img src="./assets/icons/c-remove 1.svg" alt="" />
+                              <span class="ml-2">Không đạt</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="course_details d-flex align-items-center justify-content-between pt-3">
+                          <span>1 Khóa học</span>
+                          <a href="/chi_tiet_khoa_hoc.html">
+                            <button
+                              type="button"
+                              class="btn bg-primary cursor-pointer p-0 d-flex flex-row align-items-center justify-content-center"
+                            >
+                              <img src="./assets/icons/left arrow 4.svg" alt="" />
+                            </button>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-wrap col-6 col-lg-4 col-xl-3">
+                    <div class="card px-0 course_item">
+                      <img class="card-img-top" src="./assets/images/image 42.png" alt="Courses image" />
+                      <div class="card_price">
+                        <div class="card_logo">
+                          <img src="./assets/images/university/Logo_HNUE.png" alt="HNUE" />
+                        </div>
+                        <h4 class="text-center mb-0">499.000đ</h4>
+                      </div>
+                      <div class="card-body p-2 p-md-3">
+                        <h5 class="card-title">Đại Học Bách Khoa Hà Nội</h5>
+                        <p class="card-text">
+                          Thiết kế học phần theo tiếp cận giáo dục dựa trên chuẩn đầu ra (Outcome-Based Education)
+                        </p>
+                        <div class="card_rating d-flex align-items-center justify-content-start">
+                          <img src="./assets/icons/star-sm.svg" class="mr-2" alt="" />
+                          <span class="text-center">8/10</span>
+                        </div>
+
+                        <!-- My Course Progress -->
+                        <div class="course_progress mb-1 d-none">
+                          <div class="course_percent_wrap d-none align-items-center justify-content-start">
+                            <div class="course_percent flex-1">
+                              <div></div>
+                            </div>
+                            <span>80 %</span>
+                          </div>
+
+                          <div class="course_register d-block">
+                            <div class="course_register_success d-none align-items-center justify-content-start">
+                              <img src="./assets/icons/c-check 1.svg" alt="" />
+                              <span class="ml-2">Đã đăng kí thi</span>
+                            </div>
+
+                            <div class="course_register_failed d-flex align-items-center justify-content-start">
+                              <img src="./assets/icons/c-warning 2.svg" alt="" />
+                              <span class="ml-2">Chưa đăng kí thi</span>
+                            </div>
+                          </div>
+
+                          <div class="course_test d-none">
+                            <div class="course_test_passed d-none align-items-center justify-content-center">
+                              <img src="./assets/icons/g-check 1.svg" alt="" />
+                              <span class="ml-2">Đạt</span>
+                            </div>
+                            <div class="course_test_failed d-flex align-items-center justify-content-center">
+                              <img src="./assets/icons/c-remove 1.svg" alt="" />
+                              <span class="ml-2">Không đạt</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="course_details d-flex align-items-center justify-content-between pt-3">
+                          <span>1 Khóa học</span>
+                          <a href="/chi_tiet_khoa_hoc.html">
+                            <button
+                              type="button"
+                              class="btn bg-primary cursor-pointer p-0 d-flex flex-row align-items-center justify-content-center"
+                            >
+                              <img src="./assets/icons/left arrow 4.svg" alt="" />
+                            </button>
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -860,9 +900,9 @@
                 </nav>
                 <div class="filter_container d-flex flex-row align-items-center justify-content-start">
                   <button type="button" class="cursor-pointer text-primary mr-3" style="font-size: 22px">
-                    <i class="bi bi-arrow-repeat"></i>
+                    <img src="./assets/icons/reload.svg" alt="" />
                   </button>
-                  <ul class="filter_list pl-3 d-flex flex-row align-items-center justify-content-between">
+                  <ul class="filter_list pl-3 d-flex align-items-center justify-content-between">
                     <li class="filter_item active cursor-pointer text-italic">
                       <a href="">Top</a>
                     </li>
@@ -914,23 +954,48 @@
                         <h5 class="card-title">Đại Học Bách Khoa Hà Nội</h5>
                         <div class="card_separator"></div>
                         <div class="card_details">
-                          <div class="card_rating d-flex align-items-start justify-content-start text-white mb-1">
-                            <i class="bi bi-star mr-2" aria-hidden="true"></i>
+                          <div class="card_rating d-flex align-items-center justify-content-start text-white mb-1">
+                            <img src="./assets/icons/w-star-xs.svg" class="mr-2" alt="" />
                             <span class="text-left">8/10</span>
                           </div>
-                          <div class="card_quantity d-flex align-items-start justify-content-start text-white mb-1">
-                            <i class="bi bi-book mr-2" aria-hidden="true"></i>
+                          <div class="card_quantity d-flex align-items-center justify-content-start text-white mb-1">
+                            <img src="./assets/icons/menu-board.svg" class="mr-2" alt="" />
                             <span class="text-left">5 Khóa học</span>
                           </div>
-                          <div class="card_time d-flex align-items-start justify-content-start text-white mb-1">
-                            <i class="bi bi-clock mr-2" aria-hidden="true"></i>
+                          <div class="card_time d-flex align-items-center justify-content-start text-white mb-1">
+                            <img src="./assets/icons/timer.svg" class="mr-2" alt="" />
                             <span class="text-left">Thời gian: 4 tuần</span>
                           </div>
                         </div>
                         <div class="d-flex align-items-center justify-content-end mt-3">
-                          <button type="button" class="btn btn-sm bg-white cursor-pointer p-0 text-primary">
-                            <i class="bi bi-reply-fill" aria-hidden="true"></i>
-                          </button>
+                          <a href="chi_tiet_chuong_trinh_dao_tao.html">
+                            <button type="button" class="btn edu_details_btn">
+                              <svg
+                                width="23"
+                                height="23"
+                                viewBox="0 0 23 23"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <g clip-path="url(#clip0_519_94068)">
+                                  <path
+                                    d="M18.7652 18.9114C18.5383 18.9114 18.3412 18.7473 18.3033 18.5197C17.965 16.5446 16.0524 13.0974 11.201 12.896V15.4301C11.201 15.6057 11.1029 15.7666 10.9468 15.8469C10.7906 15.9273 10.6027 15.9136 10.4598 15.8116L3.43066 10.7907C3.30747 10.7027 3.23438 10.5606 3.23438 10.4093C3.23438 10.2578 3.30747 10.1158 3.43066 10.0278L10.4598 5.007C10.6027 4.90494 10.7907 4.89128 10.9468 4.97163C11.1029 5.05197 11.201 5.21285 11.201 5.38844V7.96078C14.1999 8.25991 19.2344 10.4245 19.2344 18.4426C19.2344 18.6865 19.0473 18.8897 18.8043 18.9098C18.7912 18.9108 18.7782 18.9114 18.7652 18.9114Z"
+                                    fill="#123060"
+                                  />
+                                </g>
+                                <defs>
+                                  <clipPath id="clip0_519_94068">
+                                    <rect
+                                      width="16"
+                                      height="16"
+                                      fill="white"
+                                      transform="translate(22.1621 14.8438) rotate(150)"
+                                    />
+                                  </clipPath>
+                                </defs>
+                              </svg>
+                            </button>
+                          </a>
                         </div>
                       </div>
                       <div class="card_decorate">
@@ -961,23 +1026,48 @@
                         <h5 class="card-title">Đại Học Bách Khoa Hà Nội</h5>
                         <div class="card_separator"></div>
                         <div class="card_details">
-                          <div class="card_rating d-flex align-items-start justify-content-start text-white mb-1">
-                            <i class="bi bi-star mr-2" aria-hidden="true"></i>
+                          <div class="card_rating d-flex align-items-center justify-content-start text-white mb-1">
+                            <img src="./assets/icons/w-star-xs.svg" class="mr-2" alt="" />
                             <span class="text-left">8/10</span>
                           </div>
-                          <div class="card_quantity d-flex align-items-start justify-content-start text-white mb-1">
-                            <i class="bi bi-book mr-2" aria-hidden="true"></i>
+                          <div class="card_quantity d-flex align-items-center justify-content-start text-white mb-1">
+                            <img src="./assets/icons/menu-board.svg" class="mr-2" alt="" />
                             <span class="text-left">5 Khóa học</span>
                           </div>
-                          <div class="card_time d-flex align-items-start justify-content-start text-white mb-1">
-                            <i class="bi bi-clock mr-2" aria-hidden="true"></i>
+                          <div class="card_time d-flex align-items-center justify-content-start text-white mb-1">
+                            <img src="./assets/icons/timer.svg" class="mr-2" alt="" />
                             <span class="text-left">Thời gian: 4 tuần</span>
                           </div>
                         </div>
                         <div class="d-flex align-items-center justify-content-end mt-3">
-                          <button type="button" class="btn btn-sm bg-white cursor-pointer p-0 text-primary">
-                            <i class="bi bi-reply-fill" aria-hidden="true"></i>
-                          </button>
+                          <a href="chi_tiet_chuong_trinh_dao_tao.html">
+                            <button type="button" class="btn edu_details_btn">
+                              <svg
+                                width="23"
+                                height="23"
+                                viewBox="0 0 23 23"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <g clip-path="url(#clip0_519_94068)">
+                                  <path
+                                    d="M18.7652 18.9114C18.5383 18.9114 18.3412 18.7473 18.3033 18.5197C17.965 16.5446 16.0524 13.0974 11.201 12.896V15.4301C11.201 15.6057 11.1029 15.7666 10.9468 15.8469C10.7906 15.9273 10.6027 15.9136 10.4598 15.8116L3.43066 10.7907C3.30747 10.7027 3.23438 10.5606 3.23438 10.4093C3.23438 10.2578 3.30747 10.1158 3.43066 10.0278L10.4598 5.007C10.6027 4.90494 10.7907 4.89128 10.9468 4.97163C11.1029 5.05197 11.201 5.21285 11.201 5.38844V7.96078C14.1999 8.25991 19.2344 10.4245 19.2344 18.4426C19.2344 18.6865 19.0473 18.8897 18.8043 18.9098C18.7912 18.9108 18.7782 18.9114 18.7652 18.9114Z"
+                                    fill="#123060"
+                                  />
+                                </g>
+                                <defs>
+                                  <clipPath id="clip0_519_94068">
+                                    <rect
+                                      width="16"
+                                      height="16"
+                                      fill="white"
+                                      transform="translate(22.1621 14.8438) rotate(150)"
+                                    />
+                                  </clipPath>
+                                </defs>
+                              </svg>
+                            </button>
+                          </a>
                         </div>
                       </div>
                       <div class="card_decorate">
@@ -1008,23 +1098,48 @@
                         <h5 class="card-title">Đại Học Bách Khoa Hà Nội</h5>
                         <div class="card_separator"></div>
                         <div class="card_details">
-                          <div class="card_rating d-flex align-items-start justify-content-start text-white mb-1">
-                            <i class="bi bi-star mr-2" aria-hidden="true"></i>
+                          <div class="card_rating d-flex align-items-center justify-content-start text-white mb-1">
+                            <img src="./assets/icons/w-star-xs.svg" class="mr-2" alt="" />
                             <span class="text-left">8/10</span>
                           </div>
-                          <div class="card_quantity d-flex align-items-start justify-content-start text-white mb-1">
-                            <i class="bi bi-book mr-2" aria-hidden="true"></i>
+                          <div class="card_quantity d-flex align-items-center justify-content-start text-white mb-1">
+                            <img src="./assets/icons/menu-board.svg" class="mr-2" alt="" />
                             <span class="text-left">5 Khóa học</span>
                           </div>
-                          <div class="card_time d-flex align-items-start justify-content-start text-white mb-1">
-                            <i class="bi bi-clock mr-2" aria-hidden="true"></i>
+                          <div class="card_time d-flex align-items-center justify-content-start text-white mb-1">
+                            <img src="./assets/icons/timer.svg" class="mr-2" alt="" />
                             <span class="text-left">Thời gian: 4 tuần</span>
                           </div>
                         </div>
                         <div class="d-flex align-items-center justify-content-end mt-3">
-                          <button type="button" class="btn btn-sm bg-white cursor-pointer p-0 text-primary">
-                            <i class="bi bi-reply-fill" aria-hidden="true"></i>
-                          </button>
+                          <a href="chi_tiet_chuong_trinh_dao_tao.html">
+                            <button type="button" class="btn edu_details_btn">
+                              <svg
+                                width="23"
+                                height="23"
+                                viewBox="0 0 23 23"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <g clip-path="url(#clip0_519_94068)">
+                                  <path
+                                    d="M18.7652 18.9114C18.5383 18.9114 18.3412 18.7473 18.3033 18.5197C17.965 16.5446 16.0524 13.0974 11.201 12.896V15.4301C11.201 15.6057 11.1029 15.7666 10.9468 15.8469C10.7906 15.9273 10.6027 15.9136 10.4598 15.8116L3.43066 10.7907C3.30747 10.7027 3.23438 10.5606 3.23438 10.4093C3.23438 10.2578 3.30747 10.1158 3.43066 10.0278L10.4598 5.007C10.6027 4.90494 10.7907 4.89128 10.9468 4.97163C11.1029 5.05197 11.201 5.21285 11.201 5.38844V7.96078C14.1999 8.25991 19.2344 10.4245 19.2344 18.4426C19.2344 18.6865 19.0473 18.8897 18.8043 18.9098C18.7912 18.9108 18.7782 18.9114 18.7652 18.9114Z"
+                                    fill="#123060"
+                                  />
+                                </g>
+                                <defs>
+                                  <clipPath id="clip0_519_94068">
+                                    <rect
+                                      width="16"
+                                      height="16"
+                                      fill="white"
+                                      transform="translate(22.1621 14.8438) rotate(150)"
+                                    />
+                                  </clipPath>
+                                </defs>
+                              </svg>
+                            </button>
+                          </a>
                         </div>
                       </div>
                       <div class="card_decorate">
@@ -1055,23 +1170,48 @@
                         <h5 class="card-title">Đại Học Bách Khoa Hà Nội</h5>
                         <div class="card_separator"></div>
                         <div class="card_details">
-                          <div class="card_rating d-flex align-items-start justify-content-start text-white mb-1">
-                            <i class="bi bi-star mr-2" aria-hidden="true"></i>
+                          <div class="card_rating d-flex align-items-center justify-content-start text-white mb-1">
+                            <img src="./assets/icons/w-star-xs.svg" class="mr-2" alt="" />
                             <span class="text-left">8/10</span>
                           </div>
-                          <div class="card_quantity d-flex align-items-start justify-content-start text-white mb-1">
-                            <i class="bi bi-book mr-2" aria-hidden="true"></i>
+                          <div class="card_quantity d-flex align-items-center justify-content-start text-white mb-1">
+                            <img src="./assets/icons/menu-board.svg" class="mr-2" alt="" />
                             <span class="text-left">5 Khóa học</span>
                           </div>
-                          <div class="card_time d-flex align-items-start justify-content-start text-white mb-1">
-                            <i class="bi bi-clock mr-2" aria-hidden="true"></i>
+                          <div class="card_time d-flex align-items-center justify-content-start text-white mb-1">
+                            <img src="./assets/icons/timer.svg" class="mr-2" alt="" />
                             <span class="text-left">Thời gian: 4 tuần</span>
                           </div>
                         </div>
                         <div class="d-flex align-items-center justify-content-end mt-3">
-                          <button type="button" class="btn btn-sm bg-white cursor-pointer p-0 text-primary">
-                            <i class="bi bi-reply-fill" aria-hidden="true"></i>
-                          </button>
+                          <a href="chi_tiet_chuong_trinh_dao_tao.html">
+                            <button type="button" class="btn edu_details_btn">
+                              <svg
+                                width="23"
+                                height="23"
+                                viewBox="0 0 23 23"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <g clip-path="url(#clip0_519_94068)">
+                                  <path
+                                    d="M18.7652 18.9114C18.5383 18.9114 18.3412 18.7473 18.3033 18.5197C17.965 16.5446 16.0524 13.0974 11.201 12.896V15.4301C11.201 15.6057 11.1029 15.7666 10.9468 15.8469C10.7906 15.9273 10.6027 15.9136 10.4598 15.8116L3.43066 10.7907C3.30747 10.7027 3.23438 10.5606 3.23438 10.4093C3.23438 10.2578 3.30747 10.1158 3.43066 10.0278L10.4598 5.007C10.6027 4.90494 10.7907 4.89128 10.9468 4.97163C11.1029 5.05197 11.201 5.21285 11.201 5.38844V7.96078C14.1999 8.25991 19.2344 10.4245 19.2344 18.4426C19.2344 18.6865 19.0473 18.8897 18.8043 18.9098C18.7912 18.9108 18.7782 18.9114 18.7652 18.9114Z"
+                                    fill="#123060"
+                                  />
+                                </g>
+                                <defs>
+                                  <clipPath id="clip0_519_94068">
+                                    <rect
+                                      width="16"
+                                      height="16"
+                                      fill="white"
+                                      transform="translate(22.1621 14.8438) rotate(150)"
+                                    />
+                                  </clipPath>
+                                </defs>
+                              </svg>
+                            </button>
+                          </a>
                         </div>
                       </div>
                       <div class="card_decorate">
@@ -1102,23 +1242,48 @@
                         <h5 class="card-title">Đại Học Bách Khoa Hà Nội</h5>
                         <div class="card_separator"></div>
                         <div class="card_details">
-                          <div class="card_rating d-flex align-items-start justify-content-start text-white mb-1">
-                            <i class="bi bi-star mr-2" aria-hidden="true"></i>
+                          <div class="card_rating d-flex align-items-center justify-content-start text-white mb-1">
+                            <img src="./assets/icons/w-star-xs.svg" class="mr-2" alt="" />
                             <span class="text-left">8/10</span>
                           </div>
-                          <div class="card_quantity d-flex align-items-start justify-content-start text-white mb-1">
-                            <i class="bi bi-book mr-2" aria-hidden="true"></i>
+                          <div class="card_quantity d-flex align-items-center justify-content-start text-white mb-1">
+                            <img src="./assets/icons/menu-board.svg" class="mr-2" alt="" />
                             <span class="text-left">5 Khóa học</span>
                           </div>
-                          <div class="card_time d-flex align-items-start justify-content-start text-white mb-1">
-                            <i class="bi bi-clock mr-2" aria-hidden="true"></i>
+                          <div class="card_time d-flex align-items-center justify-content-start text-white mb-1">
+                            <img src="./assets/icons/timer.svg" class="mr-2" alt="" />
                             <span class="text-left">Thời gian: 4 tuần</span>
                           </div>
                         </div>
                         <div class="d-flex align-items-center justify-content-end mt-3">
-                          <button type="button" class="btn btn-sm bg-white cursor-pointer p-0 text-primary">
-                            <i class="bi bi-reply-fill" aria-hidden="true"></i>
-                          </button>
+                          <a href="chi_tiet_chuong_trinh_dao_tao.html">
+                            <button type="button" class="btn edu_details_btn">
+                              <svg
+                                width="23"
+                                height="23"
+                                viewBox="0 0 23 23"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <g clip-path="url(#clip0_519_94068)">
+                                  <path
+                                    d="M18.7652 18.9114C18.5383 18.9114 18.3412 18.7473 18.3033 18.5197C17.965 16.5446 16.0524 13.0974 11.201 12.896V15.4301C11.201 15.6057 11.1029 15.7666 10.9468 15.8469C10.7906 15.9273 10.6027 15.9136 10.4598 15.8116L3.43066 10.7907C3.30747 10.7027 3.23438 10.5606 3.23438 10.4093C3.23438 10.2578 3.30747 10.1158 3.43066 10.0278L10.4598 5.007C10.6027 4.90494 10.7907 4.89128 10.9468 4.97163C11.1029 5.05197 11.201 5.21285 11.201 5.38844V7.96078C14.1999 8.25991 19.2344 10.4245 19.2344 18.4426C19.2344 18.6865 19.0473 18.8897 18.8043 18.9098C18.7912 18.9108 18.7782 18.9114 18.7652 18.9114Z"
+                                    fill="#123060"
+                                  />
+                                </g>
+                                <defs>
+                                  <clipPath id="clip0_519_94068">
+                                    <rect
+                                      width="16"
+                                      height="16"
+                                      fill="white"
+                                      transform="translate(22.1621 14.8438) rotate(150)"
+                                    />
+                                  </clipPath>
+                                </defs>
+                              </svg>
+                            </button>
+                          </a>
                         </div>
                       </div>
                       <div class="card_decorate">
@@ -1149,23 +1314,48 @@
                         <h5 class="card-title">Đại Học Bách Khoa Hà Nội</h5>
                         <div class="card_separator"></div>
                         <div class="card_details">
-                          <div class="card_rating d-flex align-items-start justify-content-start text-white mb-1">
-                            <i class="bi bi-star mr-2" aria-hidden="true"></i>
+                          <div class="card_rating d-flex align-items-center justify-content-start text-white mb-1">
+                            <img src="./assets/icons/w-star-xs.svg" class="mr-2" alt="" />
                             <span class="text-left">8/10</span>
                           </div>
-                          <div class="card_quantity d-flex align-items-start justify-content-start text-white mb-1">
-                            <i class="bi bi-book mr-2" aria-hidden="true"></i>
+                          <div class="card_quantity d-flex align-items-center justify-content-start text-white mb-1">
+                            <img src="./assets/icons/menu-board.svg" class="mr-2" alt="" />
                             <span class="text-left">5 Khóa học</span>
                           </div>
-                          <div class="card_time d-flex align-items-start justify-content-start text-white mb-1">
-                            <i class="bi bi-clock mr-2" aria-hidden="true"></i>
+                          <div class="card_time d-flex align-items-center justify-content-start text-white mb-1">
+                            <img src="./assets/icons/timer.svg" class="mr-2" alt="" />
                             <span class="text-left">Thời gian: 4 tuần</span>
                           </div>
                         </div>
                         <div class="d-flex align-items-center justify-content-end mt-3">
-                          <button type="button" class="btn btn-sm bg-white cursor-pointer p-0 text-primary">
-                            <i class="bi bi-reply-fill" aria-hidden="true"></i>
-                          </button>
+                          <a href="chi_tiet_chuong_trinh_dao_tao.html">
+                            <button type="button" class="btn edu_details_btn">
+                              <svg
+                                width="23"
+                                height="23"
+                                viewBox="0 0 23 23"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <g clip-path="url(#clip0_519_94068)">
+                                  <path
+                                    d="M18.7652 18.9114C18.5383 18.9114 18.3412 18.7473 18.3033 18.5197C17.965 16.5446 16.0524 13.0974 11.201 12.896V15.4301C11.201 15.6057 11.1029 15.7666 10.9468 15.8469C10.7906 15.9273 10.6027 15.9136 10.4598 15.8116L3.43066 10.7907C3.30747 10.7027 3.23438 10.5606 3.23438 10.4093C3.23438 10.2578 3.30747 10.1158 3.43066 10.0278L10.4598 5.007C10.6027 4.90494 10.7907 4.89128 10.9468 4.97163C11.1029 5.05197 11.201 5.21285 11.201 5.38844V7.96078C14.1999 8.25991 19.2344 10.4245 19.2344 18.4426C19.2344 18.6865 19.0473 18.8897 18.8043 18.9098C18.7912 18.9108 18.7782 18.9114 18.7652 18.9114Z"
+                                    fill="#123060"
+                                  />
+                                </g>
+                                <defs>
+                                  <clipPath id="clip0_519_94068">
+                                    <rect
+                                      width="16"
+                                      height="16"
+                                      fill="white"
+                                      transform="translate(22.1621 14.8438) rotate(150)"
+                                    />
+                                  </clipPath>
+                                </defs>
+                              </svg>
+                            </button>
+                          </a>
                         </div>
                       </div>
                       <div class="card_decorate">
@@ -1196,23 +1386,48 @@
                         <h5 class="card-title">Đại Học Bách Khoa Hà Nội</h5>
                         <div class="card_separator"></div>
                         <div class="card_details">
-                          <div class="card_rating d-flex align-items-start justify-content-start text-white mb-1">
-                            <i class="bi bi-star mr-2" aria-hidden="true"></i>
+                          <div class="card_rating d-flex align-items-center justify-content-start text-white mb-1">
+                            <img src="./assets/icons/w-star-xs.svg" class="mr-2" alt="" />
                             <span class="text-left">8/10</span>
                           </div>
-                          <div class="card_quantity d-flex align-items-start justify-content-start text-white mb-1">
-                            <i class="bi bi-book mr-2" aria-hidden="true"></i>
+                          <div class="card_quantity d-flex align-items-center justify-content-start text-white mb-1">
+                            <img src="./assets/icons/menu-board.svg" class="mr-2" alt="" />
                             <span class="text-left">5 Khóa học</span>
                           </div>
-                          <div class="card_time d-flex align-items-start justify-content-start text-white mb-1">
-                            <i class="bi bi-clock mr-2" aria-hidden="true"></i>
+                          <div class="card_time d-flex align-items-center justify-content-start text-white mb-1">
+                            <img src="./assets/icons/timer.svg" class="mr-2" alt="" />
                             <span class="text-left">Thời gian: 4 tuần</span>
                           </div>
                         </div>
                         <div class="d-flex align-items-center justify-content-end mt-3">
-                          <button type="button" class="btn btn-sm bg-white cursor-pointer p-0 text-primary">
-                            <i class="bi bi-reply-fill" aria-hidden="true"></i>
-                          </button>
+                          <a href="chi_tiet_chuong_trinh_dao_tao.html">
+                            <button type="button" class="btn edu_details_btn">
+                              <svg
+                                width="23"
+                                height="23"
+                                viewBox="0 0 23 23"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <g clip-path="url(#clip0_519_94068)">
+                                  <path
+                                    d="M18.7652 18.9114C18.5383 18.9114 18.3412 18.7473 18.3033 18.5197C17.965 16.5446 16.0524 13.0974 11.201 12.896V15.4301C11.201 15.6057 11.1029 15.7666 10.9468 15.8469C10.7906 15.9273 10.6027 15.9136 10.4598 15.8116L3.43066 10.7907C3.30747 10.7027 3.23438 10.5606 3.23438 10.4093C3.23438 10.2578 3.30747 10.1158 3.43066 10.0278L10.4598 5.007C10.6027 4.90494 10.7907 4.89128 10.9468 4.97163C11.1029 5.05197 11.201 5.21285 11.201 5.38844V7.96078C14.1999 8.25991 19.2344 10.4245 19.2344 18.4426C19.2344 18.6865 19.0473 18.8897 18.8043 18.9098C18.7912 18.9108 18.7782 18.9114 18.7652 18.9114Z"
+                                    fill="#123060"
+                                  />
+                                </g>
+                                <defs>
+                                  <clipPath id="clip0_519_94068">
+                                    <rect
+                                      width="16"
+                                      height="16"
+                                      fill="white"
+                                      transform="translate(22.1621 14.8438) rotate(150)"
+                                    />
+                                  </clipPath>
+                                </defs>
+                              </svg>
+                            </button>
+                          </a>
                         </div>
                       </div>
                       <div class="card_decorate">
@@ -1243,23 +1458,48 @@
                         <h5 class="card-title">Đại Học Bách Khoa Hà Nội</h5>
                         <div class="card_separator"></div>
                         <div class="card_details">
-                          <div class="card_rating d-flex align-items-start justify-content-start text-white mb-1">
-                            <i class="bi bi-star mr-2" aria-hidden="true"></i>
+                          <div class="card_rating d-flex align-items-center justify-content-start text-white mb-1">
+                            <img src="./assets/icons/w-star-xs.svg" class="mr-2" alt="" />
                             <span class="text-left">8/10</span>
                           </div>
-                          <div class="card_quantity d-flex align-items-start justify-content-start text-white mb-1">
-                            <i class="bi bi-book mr-2" aria-hidden="true"></i>
+                          <div class="card_quantity d-flex align-items-center justify-content-start text-white mb-1">
+                            <img src="./assets/icons/menu-board.svg" class="mr-2" alt="" />
                             <span class="text-left">5 Khóa học</span>
                           </div>
-                          <div class="card_time d-flex align-items-start justify-content-start text-white mb-1">
-                            <i class="bi bi-clock mr-2" aria-hidden="true"></i>
+                          <div class="card_time d-flex align-items-center justify-content-start text-white mb-1">
+                            <img src="./assets/icons/timer.svg" class="mr-2" alt="" />
                             <span class="text-left">Thời gian: 4 tuần</span>
                           </div>
                         </div>
                         <div class="d-flex align-items-center justify-content-end mt-3">
-                          <button type="button" class="btn btn-sm bg-white cursor-pointer p-0 text-primary">
-                            <i class="bi bi-reply-fill" aria-hidden="true"></i>
-                          </button>
+                          <a href="chi_tiet_chuong_trinh_dao_tao.html">
+                            <button type="button" class="btn edu_details_btn">
+                              <svg
+                                width="23"
+                                height="23"
+                                viewBox="0 0 23 23"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <g clip-path="url(#clip0_519_94068)">
+                                  <path
+                                    d="M18.7652 18.9114C18.5383 18.9114 18.3412 18.7473 18.3033 18.5197C17.965 16.5446 16.0524 13.0974 11.201 12.896V15.4301C11.201 15.6057 11.1029 15.7666 10.9468 15.8469C10.7906 15.9273 10.6027 15.9136 10.4598 15.8116L3.43066 10.7907C3.30747 10.7027 3.23438 10.5606 3.23438 10.4093C3.23438 10.2578 3.30747 10.1158 3.43066 10.0278L10.4598 5.007C10.6027 4.90494 10.7907 4.89128 10.9468 4.97163C11.1029 5.05197 11.201 5.21285 11.201 5.38844V7.96078C14.1999 8.25991 19.2344 10.4245 19.2344 18.4426C19.2344 18.6865 19.0473 18.8897 18.8043 18.9098C18.7912 18.9108 18.7782 18.9114 18.7652 18.9114Z"
+                                    fill="#123060"
+                                  />
+                                </g>
+                                <defs>
+                                  <clipPath id="clip0_519_94068">
+                                    <rect
+                                      width="16"
+                                      height="16"
+                                      fill="white"
+                                      transform="translate(22.1621 14.8438) rotate(150)"
+                                    />
+                                  </clipPath>
+                                </defs>
+                              </svg>
+                            </button>
+                          </a>
                         </div>
                       </div>
                       <div class="card_decorate">
@@ -1313,7 +1553,7 @@
                         <div class="card_header">
                           <img class="card-img-top" src="./assets/images/Trần Thanh Nga.png" alt="Card image cap" />
                           <div class="card_likes">
-                            <i class="bi bi-heart-fill text-primary" aria-hidden="true"></i>
+                            <img src="./assets/icons/heart-circle.svg" class="mr-2" alt="" />
                             <span class="text-primary">8/10</span>
                           </div>
                         </div>
@@ -1328,7 +1568,7 @@
                         <div class="card_header">
                           <img class="card-img-top" src="./assets/images/Trần Thanh Nga.png" alt="Card image cap" />
                           <div class="card_likes">
-                            <i class="bi bi-heart-fill text-primary" aria-hidden="true"></i>
+                            <img src="./assets/icons/heart-circle.svg" class="mr-2" alt="" />
                             <span class="text-primary">8/10</span>
                           </div>
                         </div>
@@ -1343,7 +1583,7 @@
                         <div class="card_header">
                           <img class="card-img-top" src="./assets/images/Trần Thanh Nga.png" alt="Card image cap" />
                           <div class="card_likes">
-                            <i class="bi bi-heart-fill text-primary" aria-hidden="true"></i>
+                            <img src="./assets/icons/heart-circle.svg" class="mr-2" alt="" />
                             <span class="text-primary">8/10</span>
                           </div>
                         </div>
@@ -1358,7 +1598,7 @@
                         <div class="card_header">
                           <img class="card-img-top" src="./assets/images/Trần Thanh Nga.png" alt="Card image cap" />
                           <div class="card_likes">
-                            <i class="bi bi-heart-fill text-primary" aria-hidden="true"></i>
+                            <img src="./assets/icons/heart-circle.svg" class="mr-2" alt="" />
                             <span class="text-primary">8/10</span>
                           </div>
                         </div>
@@ -1392,7 +1632,7 @@
                       <form class="topics_form_search">
                         <h2 class="title m-0 my-2 text-left">Tìm kiếm</h2>
                         <div class="form-group d-flex align-items-center justify-content-start">
-                          <i class="bi bi-search pr-2" aria-hidden="true"></i>
+                          <img src="./assets/icons/magnifier search.svg" class="pr-2" alt="" />
                           <input
                             class="topics_search_input w-full"
                             type="search"
@@ -1400,7 +1640,7 @@
                             aria-label="Search"
                           />
                         </div>
-                        <div class="form-group d-flex align-items-center justify-content-start">
+                        <div class="form-group px-0 d-flex align-items-center justify-content-start">
                           <select class="form-control">
                             <option>Chủ đề học</option>
                             <option>Tất cả chủ đề</option>
@@ -1409,16 +1649,25 @@
                             <option>Thiết kế trải nghiệm người dùng</option>
                             <option>Marketing</option>
                           </select>
+                          <div class="absolute center" style="right: 16px">
+                            <img src="./assets/icons/arrow-down-select.svg" alt="" />
+                          </div>
                         </div>
-                        <button class="btn mx-auto px-4 py-2 mb-3 bg-primary text-white w-full" type="button">
-                          <i class="bi bi-search mr-1" aria-hidden="true"></i>
+                        <button
+                          type="button"
+                          class="btn w-full mx-auto px-4 py-2 mb-3 bg-primary fs-14 text-white d-flex flex-row align-items-center justify-content-center"
+                        >
+                          <img src="./assets/icons/w-magnifier-search.svg" class="pr-2" alt="" />
                           Tìm kiếm
                         </button>
                       </form>
                       <div class="mb-3 separator"></div>
 
-                      <button type="button" class="btn btn-border mx-auto px-4 py-2 bg-white text-primary w-full">
-                        <i class="bi bi-clipboard-fill mr-1" aria-hidden="true"></i>
+                      <button
+                        type="button"
+                        class="btn w-full btn-border mx-auto px-4 py-2 bg-white text-primary d-flex flex-row align-items-center justify-content-center"
+                      >
+                        <img src="./assets/icons/document-normal.svg" class="pr-2" alt="" />
                         Danh sách tất cả các chủ đề
                       </button>
                     </div>
@@ -1643,7 +1892,7 @@
                 <div class="row align-items-start justify-content-start">
                   <div class="col-6 col-lg-3 mb-4 my-lg-4">
                     <div class="pb-4">
-                      <img src="./assets/images/w_VNMOOC.VN.png" class="vnmooc" alt="" />
+                      <img src="./assets/icons/w VNMOOC.VN.svg" alt="" />
                     </div>
                     <p class="text-white text-italic" style="line-height: 2">
                       Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
@@ -1683,14 +1932,18 @@
                     <ul class="d-flex align-items-center justify-content-start">
                       <li class="d-flex align-items-center justify-content-center mr-2 mr-sm-4">
                         <a href="" class="text-white">
-                          <i class="bi bi-facebook"></i>
+                          <img src="./assets/icons/f-facebook.svg" alt="" />
                         </a>
                       </li>
                       <li class="d-flex align-items-center justify-content-center mr-2 mr-sm-4">
-                        <a href="" class="text-white"><i class="bi bi-twitter"></i></a>
+                        <a href="" class="text-white">
+                          <img src="./assets/icons/f-twitter.svg" alt="" />
+                        </a>
                       </li>
                       <li class="d-flex align-items-center justify-content-center mr-2 mr-sm-4">
-                        <a href="" class="text-white"><i class="bi bi-youtube"></i></a>
+                        <a href="" class="text-white">
+                          <img src="./assets/icons/f-youtube.svg" alt="" />
+                        </a>
                       </li>
                     </ul>
                   </div>
@@ -1698,8 +1951,11 @@
                 <div class="footer_contact">
                   <ul>
                     <li class="mb-4">
-                      <button type="button" class="btn btn-lg rounded-full bg-white">
-                        <i class="bi bi-telephone-fill" style="font-size: 24px; color: #1ee117"></i>
+                      <button
+                        type="button"
+                        class="btn btn-lg rounded-full bg-white d-flex flex-row align-items-center justify-content-center"
+                      >
+                        <img src="./assets/icons/fluent_call-24-filled.svg" alt="" />
                       </button>
                     </li>
                     <li class="mb-4">
@@ -1707,7 +1963,7 @@
                         type="button"
                         class="btn btn-lg rounded-full bg-white d-flex align-items-center justify-content-center"
                       >
-                        <img src="./assets/images/Vector.png" alt="" />
+                        <img src="./assets/icons/simple-icons_zalo.svg" alt="" />
                       </button>
                     </li>
                     <li class="mb-4">
@@ -1715,7 +1971,7 @@
                         type="button"
                         class="btn btn-lg rounded-full bg-white d-flex align-items-center justify-content-center"
                       >
-                        <img src="./assets/images/amivatar 1.png" alt="" />
+                        <img src="./assets/icons/amivatar 1.svg" alt="" />
                       </button>
                     </li>
                   </ul>
@@ -1727,7 +1983,6 @@
       </div>
 
       <!-- Header Menu Modal -->
-
       <div class="header_menu_modal">
         <div class="header_menu_content">
           <nav class="navbar d-flex flex-column align-items-start">
@@ -1839,11 +2094,13 @@
                 <div class="form-group mb-4">
                   <label class="form-label" for="first">Mật khẩu</label>
                   <input id="first" class="form-input" type="password" />
-                  <button type="button" class="show_password cursor-pointer"><i class="bi bi-eye-fill"></i></button>
+                  <button type="button" class="show_password cursor-pointer">
+                    <img src="./assets/icons/Shape.svg" alt="" />
+                  </button>
                 </div>
                 <div class="d-flex flex-row mb-4 align-items-center justify-content-between">
                   <a class="reset_password" href="/">Quên mật khẩu?</a>
-                  <button type="submit" class="btn login_modal_btn cursor-pointer">Đăng nhập</button>
+                  <button type="submit" class="btn login_modal_btn bg-primary cursor-pointer">Đăng nhập</button>
                 </div>
               </form>
             </div>
@@ -1857,30 +2114,14 @@
                 <button
                   class="platform_btn cursor-pointer mr-2 d-flex flex-row align-items-center justify-content-center"
                 >
-                  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16" viewBox="0 0 48 48">
-                    <path
-                      fill="#FFC107"
-                      d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"
-                    ></path>
-                    <path
-                      fill="#FF3D00"
-                      d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"
-                    ></path>
-                    <path
-                      fill="#4CAF50"
-                      d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"
-                    ></path>
-                    <path
-                      fill="#1976D2"
-                      d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"
-                    ></path>
-                  </svg>
-                  <span class="ml-3">Google</span>
+                  <img src="./assets/icons/ic_google logo.svg" class="mr-1" alt="" />
+                  <span class="ml-2">Google</span>
                 </button>
                 <button
                   class="platform_btn cursor-pointer ml-2 d-flex flex-row align-items-center justify-content-center"
                 >
-                  <i class="bi bi-facebook"></i><span class="ml-3">Facebook</span>
+                  <img src="./assets/icons/ic_fb logo.svg" class="mr-1" alt="" />
+                  <span class="ml-2">Facebook</span>
                 </button>
               </div>
             </div>
@@ -1889,7 +2130,6 @@
       </div>
 
       <!-- Register Modal -->
-
       <div
         class="modal fade"
         id="registerModal"
@@ -1940,15 +2180,21 @@
                 <div class="form-group mb-4">
                   <label class="form-label" for="first">Mật khẩu</label>
                   <input id="first" class="form-input" type="password" />
-                  <button type="button" class="show_password cursor-pointer"><i class="bi bi-eye-fill"></i></button>
+                  <button type="button" class="show_password cursor-pointer">
+                    <img src="./assets/icons/Shape.svg" alt="" />
+                  </button>
                 </div>
                 <div class="form-group mb-4">
                   <label class="form-label" for="first">Xác nhận lại mật khẩu</label>
                   <input id="first" class="form-input" type="password" />
-                  <button type="button" class="show_password cursor-pointer"><i class="bi bi-eye-fill"></i></button>
+                  <button type="button" class="show_password cursor-pointer">
+                    <img src="./assets/icons/Shape.svg" alt="" />
+                  </button>
                 </div>
                 <div class="d-flex flex-row mb-4 align-items-center justify-content-between">
-                  <button type="submit" class="btn w-full login_modal_btn cursor-pointer">Tạo tài khoản</button>
+                  <button type="submit" class="btn w-full bg-primary login_modal_btn cursor-pointer">
+                    Tạo tài khoản
+                  </button>
                 </div>
               </form>
             </div>

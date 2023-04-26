@@ -35,16 +35,16 @@
                 <div class="col">
                   <div class="top_bar_content d-flex flex-row align-items-center justify-content-start">
                     <ul class="top_bar_contact_list d-flex align-items-center">
-                      <li class="py-1 pr-2 mr-2">
-                        <i class="bi bi-telephone" aria-hidden="true"></i>
+                      <li class="py-1 pr-2 mr-4 d-flex flex-row align-items-center justify-content-start">
+                        <img src="./assets/icons/call.svg" class="mr-2" alt="" />
                         <a href="tel:0123456789" class="px-1">0123456789</a>
                       </li>
-                      <li class="py-1 pr-2 mr-3">
-                        <i class="bi bi-printer" aria-hidden="true"></i>
+                      <li class="py-1 pr-2 mr-4 d-flex flex-row align-items-center justify-content-start">
+                        <img src="./assets/icons/printer.svg" class="mr-2" alt="" />
                         <a href="0123456789" class="px-2">0123456789</a>
                       </li>
-                      <li class="py-1 pr-2 mr-3">
-                        <i class="bi bi-envelope" aria-hidden="true"></i>
+                      <li class="py-1 pr-2 mr-4 d-flex flex-row align-items-center justify-content-start">
+                        <img src="./assets/icons/sms.svg" class="mr-2" alt="" />
                         <a href="mailto:@contact.vn" class="px-2">@contact.vn</a>
                       </li>
                     </ul>
@@ -71,7 +71,7 @@
                 >
                   <div class="logo_container">
                     <a href="/">
-                      <img class="logo_image" src="./assets/images/VNMOOC.VN.png" alt="Logo" />
+                      <img class="logo_image" src="./assets/icons/h-VNMOOC.VN.svg" alt="Logo" />
                     </a>
                   </div>
                   <button
@@ -1167,7 +1167,7 @@
                 <div class="row align-items-start justify-content-start">
                   <div class="col-6 col-lg-3 mb-4 my-lg-4">
                     <div class="pb-4">
-                      <img src="./assets/images/w_VNMOOC.VN.png" class="vnmooc" alt="" />
+                      <img src="./assets/icons/w VNMOOC.VN.svg" alt="" />
                     </div>
                     <p class="text-white text-italic" style="line-height: 2">
                       Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
@@ -1207,14 +1207,18 @@
                     <ul class="d-flex align-items-center justify-content-start">
                       <li class="d-flex align-items-center justify-content-center mr-2 mr-sm-4">
                         <a href="" class="text-white">
-                          <i class="bi bi-facebook"></i>
+                          <img src="./assets/icons/f-facebook.svg" alt="" />
                         </a>
                       </li>
                       <li class="d-flex align-items-center justify-content-center mr-2 mr-sm-4">
-                        <a href="" class="text-white"><i class="bi bi-twitter"></i></a>
+                        <a href="" class="text-white">
+                          <img src="./assets/icons/f-twitter.svg" alt="" />
+                        </a>
                       </li>
                       <li class="d-flex align-items-center justify-content-center mr-2 mr-sm-4">
-                        <a href="" class="text-white"><i class="bi bi-youtube"></i></a>
+                        <a href="" class="text-white">
+                          <img src="./assets/icons/f-youtube.svg" alt="" />
+                        </a>
                       </li>
                     </ul>
                   </div>
@@ -1222,8 +1226,11 @@
                 <div class="footer_contact">
                   <ul>
                     <li class="mb-4">
-                      <button type="button" class="btn btn-lg rounded-full bg-white">
-                        <i class="bi bi-telephone-fill" style="font-size: 24px; color: #1ee117"></i>
+                      <button
+                        type="button"
+                        class="btn btn-lg rounded-full bg-white d-flex flex-row align-items-center justify-content-center"
+                      >
+                        <img src="./assets/icons/fluent_call-24-filled.svg" alt="" />
                       </button>
                     </li>
                     <li class="mb-4">
@@ -1231,7 +1238,7 @@
                         type="button"
                         class="btn btn-lg rounded-full bg-white d-flex align-items-center justify-content-center"
                       >
-                        <img src="./assets/images/Vector.png" alt="" />
+                        <img src="./assets/icons/simple-icons_zalo.svg" alt="" />
                       </button>
                     </li>
                     <li class="mb-4">
@@ -1239,7 +1246,7 @@
                         type="button"
                         class="btn btn-lg rounded-full bg-white d-flex align-items-center justify-content-center"
                       >
-                        <img src="./assets/images/amivatar 1.png" alt="" />
+                        <img src="./assets/icons/amivatar 1.svg" alt="" />
                       </button>
                     </li>
                   </ul>
@@ -1249,8 +1256,8 @@
           </div>
         </div>
       </div>
-      <!-- Header Menu Modal -->
 
+      <!-- Header Menu Modal -->
       <div class="header_menu_modal">
         <div class="header_menu_content">
           <nav class="navbar d-flex flex-column align-items-start">
@@ -1272,7 +1279,7 @@
                   aria-expanded="false"
                   aria-label="Toggle navigation"
                 >
-                  Khóa học
+                  <a href="">Khóa học</a>
                   <i class="bi bi-chevron-down ml-2" aria-hidden="true"></i>
                 </li>
                 <div class="collapse" id="navbarToggleCourses">
@@ -1294,7 +1301,7 @@
                   aria-expanded="false"
                   aria-label="Toggle navigation"
                 >
-                  Chương trình đào tạo
+                  <a href="/">Chương trình đào tạo</a>
                   <i class="bi bi-chevron-down ml-2" aria-hidden="true"></i>
                 </li>
                 <div class="collapse" id="navbarToggleEducationProgram">
@@ -1362,11 +1369,13 @@
                 <div class="form-group mb-4">
                   <label class="form-label" for="first">Mật khẩu</label>
                   <input id="first" class="form-input" type="password" />
-                  <button type="button" class="show_password cursor-pointer"><i class="bi bi-eye-fill"></i></button>
+                  <button type="button" class="show_password cursor-pointer">
+                    <img src="./assets/icons/Shape.svg" alt="" />
+                  </button>
                 </div>
                 <div class="d-flex flex-row mb-4 align-items-center justify-content-between">
                   <a class="reset_password" href="/">Quên mật khẩu?</a>
-                  <button type="submit" class="btn login_modal_btn cursor-pointer">Đăng nhập</button>
+                  <button type="submit" class="btn bg-primary login_modal_btn cursor-pointer">Đăng nhập</button>
                 </div>
               </form>
             </div>
@@ -1380,30 +1389,14 @@
                 <button
                   class="platform_btn cursor-pointer mr-2 d-flex flex-row align-items-center justify-content-center"
                 >
-                  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16" viewBox="0 0 48 48">
-                    <path
-                      fill="#FFC107"
-                      d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"
-                    ></path>
-                    <path
-                      fill="#FF3D00"
-                      d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"
-                    ></path>
-                    <path
-                      fill="#4CAF50"
-                      d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"
-                    ></path>
-                    <path
-                      fill="#1976D2"
-                      d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"
-                    ></path>
-                  </svg>
-                  <span class="ml-3">Google</span>
+                  <img src="./assets/icons/ic_google logo.svg" class="mr-1" alt="" />
+                  <span class="ml-2">Google</span>
                 </button>
                 <button
                   class="platform_btn cursor-pointer ml-2 d-flex flex-row align-items-center justify-content-center"
                 >
-                  <i class="bi bi-facebook"></i><span class="ml-3">Facebook</span>
+                  <img src="./assets/icons/ic_fb logo.svg" class="mr-1" alt="" />
+                  <span class="ml-2">Facebook</span>
                 </button>
               </div>
             </div>
@@ -1463,15 +1456,21 @@
                 <div class="form-group mb-4">
                   <label class="form-label" for="first">Mật khẩu</label>
                   <input id="first" class="form-input" type="password" />
-                  <button type="button" class="show_password cursor-pointer"><i class="bi bi-eye-fill"></i></button>
+                  <button type="button" class="show_password cursor-pointer">
+                    <img src="./assets/icons/Shape.svg" alt="" />
+                  </button>
                 </div>
                 <div class="form-group mb-4">
                   <label class="form-label" for="first">Xác nhận lại mật khẩu</label>
                   <input id="first" class="form-input" type="password" />
-                  <button type="button" class="show_password cursor-pointer"><i class="bi bi-eye-fill"></i></button>
+                  <button type="button" class="show_password cursor-pointer">
+                    <img src="./assets/icons/Shape.svg" alt="" />
+                  </button>
                 </div>
                 <div class="d-flex flex-row mb-4 align-items-center justify-content-between">
-                  <button type="submit" class="btn w-full login_modal_btn cursor-pointer">Tạo tài khoản</button>
+                  <button type="submit" class="btn w-full bg-primary login_modal_btn cursor-pointer">
+                    Tạo tài khoản
+                  </button>
                 </div>
               </form>
             </div>
@@ -1479,6 +1478,7 @@
         </div>
       </div>
     </div>
+
     <script src="./theme/unicat/js/jquery-3.2.1.min.js"></script>
     <script src="./assets/lib/bootstrap/js/bootstrap.min.js"></script>
     <script src="./theme/unicat/styles/bootstrap4/popper.js"></script>

@@ -51,6 +51,7 @@
   .lec_list,
   .suggest_filter_list {
     overflow-x: scroll;
+    overflow-y: visible;
   }
 
   .filter_list::-webkit-scrollbar,

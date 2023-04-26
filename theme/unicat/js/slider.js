@@ -7,9 +7,9 @@ $(document).ready(function () {
     autoplaySpeed: 2500,
     draggable: false,
     prevArrow:
-      "<button type='button' class='slick-prev pull-left d-none d-sm-block cursor-pointer'><i class='bi bi-arrow-left-circle-fill' aria-hidden='true'></i></button>",
+      "<button type='button' class='btn slick-prev pull-left d-none d-sm-block cursor-pointer'><i class='bi bi-arrow-left-circle-fill' aria-hidden='true'></i></button>",
     nextArrow:
-      "<button type='button' class='slick-next pull-right d-none d-sm-block cursor-pointer'><i class='bi bi-arrow-right-circle-fill' aria-hidden='true'></i></button>",
+      "<button type='button' class='btn slick-next pull-right d-none d-sm-block cursor-pointer'><i class='bi bi-arrow-right-circle-fill' aria-hidden='true'></i></button>",
 
     responsive: [
       {
