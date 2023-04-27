@@ -13,6 +13,14 @@
   justify-content: space-between;
 }
 
+.welcome_content {
+  width: 35%;
+}
+
+.welcome_content img {
+  width: 100%;
+}
+
 .welcome_container h2 {
   font-size: 30px;
   font-weight: 700;
@@ -132,12 +140,16 @@
 *********************************/
 
 .account_container {
-  background: linear-gradient(to right, white 0%, white 20%, rgba(17, 48, 96, 0.05) 20%, rgba(17, 48, 96, 0.05) 100%);
+  background: linear-gradient(to bottom, white 0%, white 4%, rgba(17, 48, 96, 0.05) 4%, rgba(17, 48, 96, 0.05) 100%);
   border-top: 1px solid var(--border-color);
 }
 
+.account_wrap {
+  padding: 0;
+}
+
 .account_nav {
-  padding: 28px 24px 28px 0;
+  padding: 28px 24px 28px 15px;
 
   background: var(--white);
 }
@@ -165,6 +177,7 @@
 }
 
 .account_nav_item {
+  width: 60%;
   margin-bottom: 12px;
   padding: 10px 18px;
   display: flex;
@@ -181,6 +194,10 @@
 
   cursor: pointer;
   transition: all 100ms ease-in-out;
+}
+
+.account_nav_item .icon {
+  padding-right: 16px;
 }
 
 .account_nav_item svg path {
@@ -209,9 +226,7 @@
 }
 
 .account_content {
-  padding: 0 0 40px 30px;
-
-  border-left: 1px solid var(--border-color);
+  padding: 0 15px 40px 15px;
 }
 
 .acc_content_wrap {
@@ -285,6 +300,7 @@
 }
 
 .account_edit_container .form-control {
+  height: auto;
   padding: 0;
 
   display: flex;
@@ -296,8 +312,6 @@
 }
 
 .account_edit_container .select_wrap {
-  flex: 1;
-
   position: relative;
 }
 

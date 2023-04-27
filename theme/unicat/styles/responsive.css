@@ -86,6 +86,24 @@
 ************/
 
 @media only screen and (max-width: 992px) {
+  .welcome_container h2 {
+    font-size: 24px;
+  }
+
+  .welcome_btn {
+    margin-top: 32px;
+
+    font-size: 18px;
+  }
+
+  .welcome_container p {
+    font-size: 14px;
+  }
+
+  .account_nav_item {
+    padding: 6px 10px;
+  }
+
   .banner_title {
     font-size: 32px;
   }
@@ -120,9 +138,45 @@
 ************/
 
 @media only screen and (max-width: 768px) {
+  .welcome_container {
+    margin: 60px 0;
+
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .welcome_content {
+    margin-top: 40px;
+
+    width: 100%;
+  }
+
+  .welcome_content img {
+    width: auto;
+  }
+
+  .welcome_btn {
+    margin-top: 26px;
+  }
+
+  .subjects_container .title h3,
   .title {
     font-size: 26px;
     line-height: 1.8;
+  }
+
+  .account_nav .title {
+    font-size: 20px;
+  }
+
+  .account_nav_item {
+    font-size: 12px;
+  }
+
+  .account_nav_item .icon {
+    display: none;
   }
 
   .filter_item a {
@@ -149,6 +203,7 @@
     margin-bottom: 12px;
   }
 
+  .subjects_container .title p,
   .notification_text,
   .card_rating,
   .card_quantity,
@@ -216,6 +271,7 @@
 ************/
 
 @media only screen and (max-width: 640px) {
+  .subjects_container .title h3,
   .title {
     font-size: 24px;
     line-height: 1.6;
@@ -262,6 +318,7 @@
     height: 40px;
   }
 
+  .subjects_container .title p,
   .notification_text,
   .card_rating,
   .card_quantity,
@@ -318,10 +375,82 @@
 }
 
 /************
+  576px
+************/
+
+@media only screen and (min-width: 576px) {
+  .account_container {
+    background: linear-gradient(to right, white 0%, white 20%, rgba(17, 48, 96, 0.05) 20%, rgba(17, 48, 96, 0.05) 100%);
+  }
+
+  .account_wrap {
+    padding: 0 15px;
+  }
+
+  .account_content {
+    padding-left: 30px;
+    padding-right: 0;
+
+    border-left: 1px solid var(--border-color);
+  }
+
+  .account_nav {
+    padding-left: 0;
+  }
+
+  .account_nav_item {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .account_nav .title {
+    font-size: 22px;
+  }
+
+  .account_nav_item {
+    font-size: 14px;
+  }
+}
+
+/************
 6.460px
 ************/
 
 @media only screen and (max-width: 460px) {
+  .subject_wrap {
+    max-width: 50%;
+    flex: 1;
+  }
+
+  .subjects_container .btn_wrap button {
+    min-width: 140px;
+  }
+
+  .welcome_container h2 {
+    font-size: 20px;
+  }
+
+  .welcome_btn {
+    font-size: 16px;
+  }
+
+  .welcome_container p {
+    font-size: 12px;
+  }
+
+  .account_nav_item {
+    width: 70%;
+  }
+
+  .account_nav .title {
+    font-size: 24px;
+  }
+
+  .account_nav_item {
+    width: 80%;
+  }
+
   .main_nav_item {
     margin-right: 2px;
   }
@@ -384,6 +513,10 @@
   .page-item .page-link {
     font-size: 12px;
   }
+
+  .footer_logo img {
+    width: 100%;
+  }
 }
 
 /************
@@ -391,6 +524,14 @@
 ************/
 
 @media only screen and (max-width: 320px) {
+  .subjects_container .btn_wrap button {
+    min-width: 120px;
+  }
+
+  .account_nav_item {
+    width: 100%;
+  }
+
   .banner_title,
   .banner_text {
     font-size: 24px;
