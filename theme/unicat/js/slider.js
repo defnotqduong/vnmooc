@@ -1,10 +1,12 @@
 $(document).ready(function () {
+  const SlideItem = $(".slide-university .slide-item");
+
   $(".slide-university").slick({
-    slidesToShow: 6,
-    slidesToScroll: 2,
+    slidesToShow: SlideItem.length - 1,
+    slidesToScroll: 1,
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 2500,
+    autoplaySpeed: 1500,
     draggable: false,
     prevArrow:
       "<button type='button' class='btn slick-prev pull-left d-none d-sm-block cursor-pointer'><i class='bi bi-arrow-left-circle-fill' aria-hidden='true'></i></button>",
@@ -31,12 +33,14 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
+  const SlideItem = $(".slide-partner .slide-item");
+
   $(".slide-partner").slick({
-    slidesToShow: 5,
-    slidesToScroll: 2,
+    slidesToShow: SlideItem.length - 2,
+    slidesToScroll: 1,
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 2500,
+    autoplaySpeed: 1500,
     draggable: false,
     prevArrow:
       "<button type='button' class='slick-prev pull-left cursor-pointer d-none'><i class='bi bi-arrow-left-circle-fill' aria-hidden='true'></i></button>",

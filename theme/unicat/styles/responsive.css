@@ -225,6 +225,32 @@
     font-size: 14px;
   }
 
+  .learning_header,
+  .learning_header .btn {
+    font-size: 14px;
+  }
+
+  .study_title {
+    font-size: 14px;
+  }
+
+  .study_overview,
+  .study_content_table {
+    font-size: 12px;
+  }
+
+  .main_content_title {
+    font-size: 16px;
+  }
+
+  .main_content_nav .btn {
+    padding: 2px 20px;
+  }
+
+  .community_learning_act {
+    border-width: 2px;
+  }
+
   .upgrade_btn {
     font-size: 16px;
     padding: 12px 0;
@@ -345,6 +371,10 @@
     font-size: 12px;
   }
 
+  .main_content_title {
+    font-size: 14px;
+  }
+
   .suggest_filter {
     font-size: 10px;
 
@@ -374,6 +404,10 @@
   .prerogative {
     padding-left: 10px;
   }
+
+  .learning_section {
+    min-height: 64px;
+  }
 }
 
 /************
@@ -382,7 +416,13 @@
 
 @media only screen and (min-width: 576px) {
   .account_container {
-    background: linear-gradient(to right, white 0%, white 20%, rgba(17, 48, 96, 0.05) 20%, rgba(17, 48, 96, 0.05) 100%);
+    background: linear-gradient(
+      to right,
+      white 0%,
+      white 20%,
+      rgba(17, 48, 96, 0.05) 20%,
+      rgba(17, 48, 96, 0.05) 100%
+    );
   }
 
   .account_wrap {
@@ -412,6 +452,28 @@
 
   .account_nav_item {
     font-size: 14px;
+  }
+
+  .main_content_nav .btn {
+    padding: 2px 16px;
+    font-size: 12px;
+  }
+
+  .main_qa_modal {
+    padding: 20px 20px 32px;
+  }
+
+  .study_content_table th {
+    padding: 8px;
+  }
+
+  .study_content_table td {
+    padding: 2px 8px;
+  }
+
+  .main_course_header,
+  .main_course_body {
+    width: 100%;
   }
 }
 
@@ -518,6 +580,39 @@
 
   .footer_logo img {
     width: 100%;
+  }
+
+  .page_title {
+    font-size: 12px;
+  }
+
+  .main_content_video iframe {
+    height: 220px;
+  }
+
+  .study_content_table th {
+    padding: 6px;
+  }
+
+  .study_content_table td {
+    padding: 2px 6px;
+  }
+
+  .main_course_header {
+    padding: 6px 10px;
+  }
+
+  .learning_section {
+    min-height: 60px;
+    padding: 6px 10px;
+  }
+
+  .learning_section h6 {
+    margin-bottom: 6px;
+  }
+
+  .lesson {
+    padding: 6px 10px;
   }
 }
 
