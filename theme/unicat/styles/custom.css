@@ -1348,10 +1348,25 @@
   height: 100%;
   z-index: 9999;
   background: rgba(28, 29, 31, 0.6);
+
+  animation-duration: 0.4s;
+  animation-fill-mode: both;
 }
 
-.header_menu_modal.show {
-  display: block;
+.header_menu_modal.fade-in {
+  animation-name: fadeIn;
+}
+
+.header_menu_modal.fade-out {
+  animation-name: fadeOut;
+}
+
+.header_menu_content.slide-in {
+  animation-name: slideIn_X;
+}
+
+.header_menu_content.slide-out {
+  animation-name: slideOut_X;
 }
 
 .header_menu_content {
@@ -1360,9 +1375,8 @@
 
   background: var(--white);
 
-  animation-duration: 300ms;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
+  animation-duration: 0.4s;
+  animation-fill-mode: both;
 }
 
 .header_menu_login {
@@ -2941,7 +2955,7 @@
 }
 
 .filter_radio .radio-group + .radio-group {
-  margin-left: 46px;
+  margin-left: auto;
 }
 .answer .radio,
 .filter_radio .radio {
@@ -3181,14 +3195,22 @@
 
 .main_content_nav {
   padding: 3px;
-  background: var(--white);
 
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--white);
   border: 1px solid var(--border-color);
   border-radius: 4px;
 }
 
 .main_content_nav .btn {
-  padding: 2px 28px;
+  flex: 1;
+  min-width: 90px;
+  padding: 2px 0;
 
   font-size: 14px;
   font-weight: 700;
@@ -3338,13 +3360,13 @@
 
   z-index: 9999;
 
-  padding: 32px 48px 48px;
+  padding: 32px 48px 68px;
   background-color: rgba(0, 0, 0, 0.2);
 
   display: none;
   will-change: opacity;
 
-  animation-duration: 0.5s;
+  animation-duration: 0.4s;
   animation-fill-mode: both;
 }
 
@@ -3358,7 +3380,7 @@
 
   will-change: transform;
 
-  animation-duration: 0.5s;
+  animation-duration: 0.4s;
   animation-fill-mode: both;
 }
 
@@ -3371,47 +3393,11 @@
 }
 
 .main_qa_body.slide-in {
-  animation-name: slideIn;
+  animation-name: slideIn_Y;
 }
 
 .main_qa_body.slide-out {
-  animation-name: slideOut;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeOut {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-
-@keyframes slideIn {
-  from {
-    transform: translateY(50px);
-  }
-  to {
-    transform: translateY(0);
-  }
-}
-
-@keyframes slideOut {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translatey(50px);
-  }
+  animation-name: slideOut_Y;
 }
 
 .main_qa_body::-webkit-scrollbar {
@@ -3435,7 +3421,7 @@
 
   display: none;
   will-change: opacity;
-  animation: fadeIn 0.3s ease;
+  animation: fadeIn 0.4s ease;
 }
 
 .main_course_modal.show {
@@ -4101,4 +4087,60 @@
   font-size: 16px;
   font-weight: 700;
   color: var(--text-color);
+}
+
+/* Animation */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes slideIn_Y {
+  from {
+    transform: translateY(50px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideOut_Y {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translatey(50px);
+  }
+}
+
+@keyframes slideIn_X {
+  from {
+    transform: translateX(-100px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOut_X {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100px);
+  }
 }

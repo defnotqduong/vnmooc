@@ -10,10 +10,15 @@ $(document).ready(function () {
   let isHeaderMenuContentClicked = false;
 
   function openMenu() {
-    headerMenuModal.addClass("show");
+    $(headerMenuModal).fadeIn().removeClass("fade-out").addClass("fade-in");
+    $(headerMenuContent).removeClass("slide-out").addClass("slide-in");
   }
   function closeMenu() {
-    headerMenuModal.removeClass("show");
+    $(headerMenuModal).removeClass("fade-in").addClass("fade-out");
+    $(headerMenuContent).removeClass("slide-in").addClass("slide-out");
+    setTimeout(function () {
+      $(headerMenuModal).fadeOut();
+    }, 400);
   }
 
   // Open and close menu on mobile
@@ -71,7 +76,7 @@ $(document).ready(function () {
     $(mainQABody).removeClass("slide-in").addClass("slide-out");
     setTimeout(function () {
       $(mainQAModal).fadeOut();
-    }, 500);
+    }, 400);
   }
 
   $(mainQABody).on("click", function (e) {
