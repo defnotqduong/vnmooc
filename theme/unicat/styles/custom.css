@@ -3337,9 +3337,7 @@
   position: fixed;
   bottom: 38px;
   right: 46px;
-}
 
-.main_qa_btn {
   padding: 10px;
 
   font-size: 14px;
@@ -3349,6 +3347,15 @@
   background-color: var(--white);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   border-radius: 999px;
+
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.main_qa_btn.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .main_qa_modal {

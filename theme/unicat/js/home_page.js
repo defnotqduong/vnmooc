@@ -1,13 +1,15 @@
 $(document).ready(function () {
   const header = $(".header");
 
+  const footer = $(".footer");
+
   const headerMenuModal = $(".header_menu_modal");
   const headerMenuContent = $(".header_menu_content");
   const menuOpenBtn = $(".header_menu_open_btn");
   const menuCloseBtn = $(".header_menu_close_btn");
   const loginBtn = $(".mb_login_btn");
 
-  let isHeaderMenuContentClicked = false;
+  let isBodyClicked = false;
 
   function openMenu() {
     $(headerMenuModal).fadeIn().removeClass("fade-out").addClass("fade-in");
@@ -27,13 +29,13 @@ $(document).ready(function () {
   $(loginBtn).on("click", closeMenu);
 
   $(headerMenuContent).on("click", function (e) {
-    isHeaderMenuContentClicked = true;
+    isBodyClicked = true;
   });
   $(headerMenuModal).on("click", function (e) {
-    if (!isHeaderMenuContentClicked) {
+    if (!isBodyClicked) {
       closeMenu();
     }
-    isHeaderMenuContentClicked = false;
+    isBodyClicked = false;
   });
 
   // Label Input
@@ -58,13 +60,11 @@ $(document).ready(function () {
     });
   });
 
-  // q&a modal
+  // Toggle q&a modal
   const mainQAModal = $(".main_qa_modal");
   const mainQABody = $(".main_qa_body");
   const mainQABtn = $(".main_qa_btn");
   const mainQACloseBtn = $(".main_qa_close_btn");
-
-  let isQABodyClicked = false;
 
   function openQAModal() {
     $(mainQAModal).fadeIn().removeClass("fade-out").addClass("fade-in");
@@ -80,26 +80,24 @@ $(document).ready(function () {
   }
 
   $(mainQABody).on("click", function (e) {
-    isQABodyClicked = true;
+    isBodyClicked = true;
   });
   $(mainQAModal).on("click", function (e) {
-    if (!isQABodyClicked) {
+    if (!isBodyClicked) {
       closeQAModal();
     }
-    isQABodyClicked = false;
+    isBodyClicked = false;
   });
 
   $(mainQABtn).on("click", openQAModal);
 
   $(mainQACloseBtn).on("click", closeQAModal);
 
-  // Course modal
+  // Toggle Course modal
   const mainCourseBtn = $(".main_course_btn");
   const mainCourseModal = $(".main_course_modal");
   const mainCourseBody = $(".main_course_body");
   const mainCourseCloseBtn = $(".main_course_close_btn");
-
-  let isCourseBodyClicked = false;
 
   function openCourseModal() {
     $(mainCourseModal).addClass("show");
@@ -110,15 +108,28 @@ $(document).ready(function () {
   }
 
   $(mainCourseBody).on("click", function (e) {
-    isCourseBodyClicked = true;
+    isBodyClicked = true;
   });
   $(mainCourseModal).on("click", function (e) {
-    if (!isCourseBodyClicked) {
+    if (!isBodyClicked) {
       closeCourseModal();
     }
-    isCourseBodyClicked = false;
+    isBodyClicked = false;
   });
 
   $(mainCourseBtn).on("click", openCourseModal);
   $(mainCourseCloseBtn).on("click", closeCourseModal);
+
+  // Toggle q&a button
+  $(window).scroll(function () {
+    const windowHeight = $(window).height();
+    const footerPosition = footer.offset().top;
+    const scrollHeight = $(window).scrollTop() + windowHeight;
+
+    if (scrollHeight > footerPosition) {
+      mainQABtn.removeClass("show");
+    } else {
+      mainQABtn.addClass("show");
+    }
+  });
 });
