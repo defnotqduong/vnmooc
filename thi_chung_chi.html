@@ -552,28 +552,28 @@
                       <div class="register_exam_container">
                         <div class="steps_register_exam">
                           <div class="row mx-0">
-                            <div class="col step_register_exam active">
+                            <div class="step_register_exam active">
                               <span style="opacity: 0.6">Bước 1</span>
                               <span class="fw-700 mt-2">Đăng kí</span>
                               <div class="icon">
                                 <img src="./assets/icons/c-check.svg" alt="" />
                               </div>
                             </div>
-                            <div class="col step_register_exam">
+                            <div class="step_register_exam">
                               <span style="opacity: 0.6">Bước 2</span>
                               <span class="fw-700 mt-2">Thông tin cá nhân</span>
                               <div class="icon d-none">
                                 <img src="./assets/icons/c-check.svg" alt="" />
                               </div>
                             </div>
-                            <div class="col step_register_exam">
+                            <div class="step_register_exam">
                               <span style="opacity: 0.6">Bước 3</span>
                               <span class="fw-700 mt-2">Xác nhận</span>
                               <div class="icon d-none">
                                 <img src="./assets/icons/c-check.svg" alt="" />
                               </div>
                             </div>
-                            <div class="col step_register_exam">
+                            <div class="step_register_exam">
                               <span style="opacity: 0.6">Bước 4</span>
                               <span class="fw-700 mt-2">Làm bài thi</span>
                               <div class="icon d-none">
@@ -821,12 +821,7 @@
                               />
                               <button
                                 type="button"
-                                class="btn bg-primary fw-700 text-white"
-                                style="
-                                  padding: 0 36px;
-                                  height: 40px;
-                                  border-radius: 8px;
-                                "
+                                class="contest_btn btn bg-primary fw-700 text-white"
                               >
                                 Vào thi
                                 <img
@@ -1525,28 +1520,28 @@
                       <div class="register_exam_container">
                         <div class="steps_register_exam">
                           <div class="row mx-0">
-                            <div class="col step_register_exam active">
+                            <div class="step_register_exam active">
                               <span style="opacity: 0.6">Bước 1</span>
                               <span class="fw-700 mt-2">Đăng kí</span>
                               <div class="icon">
                                 <img src="./assets/icons/c-check.svg" alt="" />
                               </div>
                             </div>
-                            <div class="col step_register_exam">
+                            <div class="step_register_exam">
                               <span style="opacity: 0.6">Bước 2</span>
                               <span class="fw-700 mt-2">Thông tin cá nhân</span>
                               <div class="icon d-none">
                                 <img src="./assets/icons/c-check.svg" alt="" />
                               </div>
                             </div>
-                            <div class="col step_register_exam">
+                            <div class="step_register_exam">
                               <span style="opacity: 0.6">Bước 3</span>
                               <span class="fw-700 mt-2">Xác nhận</span>
                               <div class="icon d-none">
                                 <img src="./assets/icons/c-check.svg" alt="" />
                               </div>
                             </div>
-                            <div class="col step_register_exam">
+                            <div class="step_register_exam">
                               <span style="opacity: 0.6">Bước 4</span>
                               <span class="fw-700 mt-2">Làm bài thi</span>
                               <div class="icon d-none">
@@ -1618,7 +1613,7 @@
                           </div>
 
                           <!-- Bước 2 -->
-                          <div class="d-block">
+                          <div class="d-none">
                             <div class="personal_info_group">
                               <h6 class="fw-700">Họ và tên</h6>
                               <div class="mt-1">
@@ -1632,7 +1627,7 @@
 
                             <div class="personal_info_group">
                               <div class="row">
-                                <div class="col">
+                                <div class="col-12 col-sm-6">
                                   <h6 class="fw-700">Ngày sinh</h6>
                                   <label
                                     for="date"
@@ -1651,7 +1646,7 @@
                                     />
                                   </label>
                                 </div>
-                                <div class="col">
+                                <div class="col-12 col-sm-6">
                                   <h6 class="fw-700">CMND/CCCD</h6>
                                   <label
                                     for="date"
@@ -1738,26 +1733,26 @@
                                 </div>
 
                                 <div
-                                  class="px-3 py-20px d-flex flex-row align-items-center justify-content-start border-b-1 border-color"
+                                  class="px-3 py-20px d-flex flex-row align-items-start justify-content-start border-b-1 border-color"
                                 >
                                   <div class="flex-1">
                                     <h6>Thời gian</h6>
                                     <div>09 giờ ngày 16 tháng 12 năm 2023</div>
                                   </div>
-                                  <div class="flex-1 pl-4">
+                                  <div class="flex-1 pl-2 pl-sm-4">
                                     <h6>Số báo danh</h6>
                                     <div>09</div>
                                   </div>
                                 </div>
 
                                 <div
-                                  class="px-3 py-20px d-flex flex-row align-items-center justify-content-start"
+                                  class="px-3 py-20px d-flex flex-row align-items-start justify-content-start"
                                 >
                                   <div class="flex-1">
                                     <h6>Ngày sinh</h6>
                                     <div>18/11/1999</div>
                                   </div>
-                                  <div class="flex-1 pl-4">
+                                  <div class="flex-1 pl-2 pl-sm-4">
                                     <h6>CMND/CCCD</h6>
                                     <div>123456789</div>
                                   </div>
@@ -1783,23 +1778,18 @@
                           </div>
 
                           <!-- Bước 4 -->
-                          <div class="d-none">
+                          <div class="d-block">
                             <div
-                              class="mt-4 d-flex flex-row align-items-center justify-content-start"
+                              class="mt-4 d-flex flex-column flex-sm-row align-items-start justify-content-start"
                             >
                               <input
                                 type="text"
                                 placeholder="Nhập mã cuộc thi"
-                                class="contest_code"
+                                class="contest_code mb-2 mb-sm-0"
                               />
                               <button
                                 type="button"
-                                class="btn bg-primary fw-700 text-white"
-                                style="
-                                  padding: 0 36px;
-                                  height: 40px;
-                                  border-radius: 8px;
-                                "
+                                class="contest_btn btn bg-primary fw-700 text-white"
                               >
                                 Vào thi
                                 <img
@@ -1816,7 +1806,7 @@
                                 style="background: rgba(194, 194, 194, 0.16)"
                               >
                                 <div
-                                  class="px-3 py-20px d-flex flex-row align-items-center justify-content-start border-b-1 border-color"
+                                  class="px-3 py-20px d-flex flex-row align-items-start justify-content-start border-b-1 border-color"
                                 >
                                   <span>
                                     <img
@@ -1840,13 +1830,13 @@
                                 </div>
 
                                 <div
-                                  class="px-3 py-20px d-flex flex-row align-items-center justify-content-start border-b-1 border-color"
+                                  class="px-3 py-20px d-flex flex-row align-items-start justify-content-start border-b-1 border-color"
                                 >
                                   <div class="flex-1">
                                     <h6>Thời gian</h6>
                                     <div>09 giờ ngày 16 tháng 12 năm 2023</div>
                                   </div>
-                                  <div class="flex-1 pl-4">
+                                  <div class="flex-1 pl-2 pl-sm-4">
                                     <h6>Số báo danh</h6>
                                     <div>09</div>
                                   </div>
@@ -1859,7 +1849,7 @@
                                     <h6>Ngày sinh</h6>
                                     <div>18/11/1999</div>
                                   </div>
-                                  <div class="flex-1 pl-4">
+                                  <div class="flex-1 pl-2 pl-sm-4">
                                     <h6>CMND/CCCD</h6>
                                     <div>123456789</div>
                                   </div>

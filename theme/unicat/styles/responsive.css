@@ -617,6 +617,15 @@
   .lesson {
     padding: 6px 10px;
   }
+
+  .step_register_exam {
+    padding: 6px 8px;
+    width: 100%;
+  }
+
+  .step_register_exam:not(:last-child) {
+    border-right: none;
+  }
 }
 
 /************

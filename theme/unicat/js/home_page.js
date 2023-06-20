@@ -14,10 +14,12 @@ $(document).ready(function () {
   function openMenu() {
     $(headerMenuModal).fadeIn().removeClass("fade-out").addClass("fade-in");
     $(headerMenuContent).removeClass("slide-out").addClass("slide-in");
+    document.body.style.overflow = "hidden";
   }
   function closeMenu() {
     $(headerMenuModal).removeClass("fade-in").addClass("fade-out");
     $(headerMenuContent).removeClass("slide-in").addClass("slide-out");
+    document.body.style.overflow = "visible";
     setTimeout(function () {
       $(headerMenuModal).fadeOut();
     }, 400);
@@ -69,11 +71,13 @@ $(document).ready(function () {
   function openQAModal() {
     $(mainQAModal).fadeIn().removeClass("fade-out").addClass("fade-in");
     $(mainQABody).removeClass("slide-out").addClass("slide-in");
+    document.body.style.overflow = "hidden";
   }
 
   function closeQAModal() {
     $(mainQAModal).removeClass("fade-in").addClass("fade-out");
     $(mainQABody).removeClass("slide-in").addClass("slide-out");
+    document.body.style.overflow = "visible";
     setTimeout(function () {
       $(mainQAModal).fadeOut();
     }, 400);
@@ -101,10 +105,12 @@ $(document).ready(function () {
 
   function openCourseModal() {
     $(mainCourseModal).addClass("show");
+    document.body.style.overflow = "hidden";
   }
 
   function closeCourseModal() {
     $(mainCourseModal).removeClass("show");
+    document.body.style.overflow = "visible";
   }
 
   $(mainCourseBody).on("click", function (e) {
@@ -126,7 +132,7 @@ $(document).ready(function () {
     const footerPosition = footer.offset().top;
     const scrollHeight = $(window).scrollTop() + windowHeight;
 
-    if (scrollHeight > footerPosition) {
+    if (scrollHeight > footerPosition + 40) {
       mainQABtn.removeClass("show");
     } else {
       mainQABtn.addClass("show");
