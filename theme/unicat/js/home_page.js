@@ -1,6 +1,5 @@
 $(document).ready(function () {
   const header = $(".header");
-
   const footer = $(".footer");
 
   const headerMenuModal = $(".header_menu_modal");
