@@ -132,9 +132,11 @@ $(document).ready(function () {
     const scrollHeight = $(window).scrollTop() + windowHeight;
 
     if (scrollHeight > footerPosition + 40) {
-      mainQABtn.removeClass("show");
+      mainQABtn.removeClass("show").on("transitionend", function () {
+        $(this).css("display", "none");
+      });
     } else {
-      mainQABtn.addClass("show");
+      mainQABtn.addClass("show").css("display", "block");
     }
   });
 });
