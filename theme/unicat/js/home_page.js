@@ -131,7 +131,7 @@ $(document).ready(function () {
     const footerPosition = footer.offset().top;
     const scrollHeight = $(window).scrollTop() + windowHeight;
 
-    if (scrollHeight > footerPosition + 40) {
+    if (scrollHeight > footerPosition + 50) {
       mainQABtn.removeClass("show").on("transitionend", function () {
         $(this).css("display", "none");
       });
